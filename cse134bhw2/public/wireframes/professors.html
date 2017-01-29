@@ -10,6 +10,7 @@
 	</header>
 
 	<section id="leftsidebar">
+		<h3>Navigation</h3>
 		<ul style="list-style: none;">
 			<li><a href="overview.html">Overview</a></li>
 			<li><a href="professors.html">Professor</a></li>
@@ -22,9 +23,12 @@
 		<h1> CSE 123 </h1>
 		<h2>Professor X</h2>
 		<h3>Grading Difficulty: Fair &nbsp; Helpfulness: 8.2 &nbsp; Overall Rating: 9.1 </h3>
-		<button><a href="prof_rating.html">RATE</a></button>
-		<button><a href="prof_edit.html"> Edit </a></button>
+		<form>
+        	<button formaction="prof_rate.html">Rate</button>
+        	<button formaction="prof_edit.html">Edit</button>
+    	</form>
 		<article id="description">
+			<h2>Description</h2>
 			Professor X is a teacher, writer, and entrepreneur.
 			<br>
 			He is the author of:
@@ -36,9 +40,9 @@
 				<li>Ajax: The Complete reference</li>
 			</ul>
 			In 1994 he founded PINT Incorporated (PINT) an internet services company, and Port80 Software in 2002.
-			</br>
+			<br>
 			In addition to the books he has published he is also a regular contributor to Network World Magazine and is a member of the Network World Test Alliance.
-			</br>
+			<br>
 			Professor X has an M.S. degree in Computer Science from UCSD where he is a Computer Science instructor.
 		</article>
 		
@@ -47,13 +51,14 @@
 	<section id="rightsidebar">
 		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Thomas_Powell_in_2008.jpg/220px-Thomas_Powell_in_2008.jpg" alt="man">
 		<section id="contactinfo">
-			Contact Professor X <br>
+			<h3>Contact Info</h3>
+			Professor X <br>
 			Email: professorx@ucsd.edu <br>
 			Office Hours: 24/7 CSE Basement <br>
 		</section>	
 	</section>
 
-	<footer align="right">
+	<footer>
 		<a href="team.html"> About Us </a>
 	</footer>
 
