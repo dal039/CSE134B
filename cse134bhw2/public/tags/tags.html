@@ -3,6 +3,11 @@
 <head>
   <title>Tags</title>
 </head>
+<style>
+	table, th, td {
+    border: 1px solid black;
+	}
+</style>
 <body>
 	<header>
 		<h1>Tags</h1>
@@ -60,17 +65,48 @@
 	<br>
 	button 
 	<br>
-	canvas
+	canvas 
 	<br>
-	caption 
+	caption - to be used with table
 	<br>
-	cite
+	cite - Cite is used when you are citing any information 
+		<p><cite>Martin Luther King, Jr.</cite> once said <q>Darkness cannot drive out darkness; only light can do that. Hate cannot drive out hate; only love can do that.	</q></p>
 	<br>
-	code
+	code - Code is used when you want to show that the following input is to be read as computer code
+	<p><code> system.out.println("Hello World"); </code></p>
 	<br> 
-	col 
+	col - to be used with table
 	<br>
-	colgroup
+	colgroup - to be used with table
+
+	<table>
+		<caption>Basic Table</caption>
+  		<colgroup>
+    		<col span="2" style="background-color:blue">
+    		<col style="background-color:yellow">
+  		</colgroup>
+  		<thead>
+  			<tr>
+    			<th>Month</th>
+    			<th>Day</th>
+    			<th>Year</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+	  		<tr>
+	    		<td>January</td>
+	    		<td>28</td>
+	    		<td>2017</td>
+	  		</tr>
+  		</tbody>
+  		<tfoot>
+  			<tr>
+  				<td>Sum:</td>
+  				<td>$100</td>
+  			</tr>
+  		</tfoot>
+	</table>
+
 	<br> 
 	datalist - Making a pre-defined list of data (colors)
 	  <input list="colors" name="color">
