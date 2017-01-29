@@ -3,6 +3,7 @@
 <head>
   <title>Tags</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="tags.css">
 </head>
 <style>
 	table, th, td {
@@ -44,8 +45,7 @@
 	  <p>An aside tag defines content aside from the content it is placed in.</p>
 	</aside>
 	<br> 
-	audio - plays audio on the web page
-
+	audio and source - plays audio on the web page from various sources
 	<audio controls>
 	  <source src="audio.mp3" type="audio/mpeg">
 	  Your browser does not support the audio element.
@@ -139,26 +139,42 @@
 		<dd>A shape with 3 sides</dd>
 	</dl>
 	<br>
-	del - <p>Defines words that have been deleted, like <del>this</del>.</p>
+	del - Defines words that have been deleted, like <del>this</del>.
 	<br> 
+	<br>
 	dfn - represents the defining instance of a term
 	<p>A <dfn>chair</dfn> is a piece of furniture that you sit on.</p>
 	<br> 
 	div - used in wireframe
 	<br>
-	em 
+	em - Places an <em>emphasis</em> on a word in the text.
 	<br>
-	embed
-	<br> 
-	fieldset
-	<br> 
-	figcaption 
+	embed - Embeds an image into the page. 
 	<br>
-	figure 
-	<br>
-	footer
+	<embed width="100" height="100" src="http://www.livescience.com/images/i/000/065/149/original/bananas.jpg?interpolation=lanczos-none&downsize=*:600"></embed>
 	<br> 
-	form
+	fieldset and legend- fieldset draws a table around related elements and legend provides a caption
+	<fieldset>
+		<legend>Shapes Fieldset</legend>
+		Circle
+		<br>
+		Square
+		<br>
+		Triangle
+		<br>
+		Rectangle
+	</fieldset>
+	<br> 
+	figure and figcaption - figure specifies self-contained images, and figcaption captions it
+	<br>
+	<figure>
+		<img src="http://www.drodd.com/images16/purple-picture9.jpg" alt="Purple" width="304" height="228">
+		<figcaption>Shown above - The color purple.</figcaption>
+	</figure>
+	<br>
+	footer - used in wireframe
+	<br> 
+	form - used in wireframe
 	<br>
 	h1 - used in wireframe
 	<br>
@@ -191,27 +207,44 @@
 	<br>
 	html - used in wireframe
 	<br> 
-	i 
+	i - used to define a part of the text in an alternative voice or mood. Italicisizes. 
+
+	<p><i>Adventures of Huckleberry Finn</i> is a novel by Mark Twain.</p>
 	<br>
-	iframe
+	iframe - used to embed another document within the same html page <br>
+	<iframe src="https://ucsd.edu" width="400" height="300">
+		<p>browser does not support iframe</p>
+	</iframe>
 	<br> 
-	img 
+	img - used in wireframe
 	<br>
-	input 
+	input - used in wireframe
 	<br>
-	ins 
+	ins - defines text that has been inserted into the document
+
+	<p>My favorite class is <del>Economics</del> <ins>Computer Science</ins>!</p>
+
 	<br>
-	kbd 
+	kbd - defines keyboard input
+	<p> To refresh the page on a Mac computer, use the input <kbd>Command+R</kbd>.</p>
 	<br>
-	keygen 
+	keygen - used to facilitate generation of key material, and the submission of the public key 
+	<p>Demo taken from w3schools</p>
+
+	<form action="demo_keygen.asp" method="get">
+  		Username: <input type="text" name="usr_name">
+  		Encryption: <keygen name="security">
+  		<input type="submit">
+	</form>
 	<br>
-	label
+	label - used in wireframe
 	<br> 
-	legend
+	legend - used in wireframe
 	<br> 
-	li 
+	li - used in wireframe
 	<br>
-	link 
+	link - used to link CSS page to the HTML page
+	<p>Linked to tags.css for demonstration purpose</p>
 	<br>
 	<p>The main tag was used to surround the content of this page since these tags are the main content of the page</p>
 	<br> 
@@ -285,66 +318,84 @@
 	<br> 
 	ruby
 	<br> 
-	s 
+	s - defines text that is no longer correct
+	<p><s>This used to be correct.</s></p>
+	<p>But now this is.</p>
 	<br>
-	samp 
+	samp - defines sample output from a computer program
 	<br>
-	script 
+	<p><samp>Compilation failed</samp></p>
 	<br>
-	section
+	script - script tag was used with noscript
+	<br>
+	section - used in wireframe
 	<br> 
-	select
+	select - used in wireframe
 	<br> 
-	small
+	<br>
+	small- makes text smaller
 	<br> 
-	source
+	span - makes changes to a section of text
 	<br>
-	span 
+	strong - bolds text
 	<br>
-	strong 
+	style - defines style info for a document or tag
 	<br>
-	style 
+	sub - defines subscript text
 	<br>
-	sub 
+	sup - defines superscript text
 	<br>
-	sup 
+	<p>This is some <small>small</small>, <strong>strong</strong>, and <span style="color:blue">stylish</span> text, that also has some <sub>subscripts</sub> and <sup>superscripts</sup>.</p>
 	<br>
-	svg
+	svg - container for scalable vector graphics
 	<br>
-	table
+	<svg width="100" height="100">
+	  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="10" fill="red" />
+	</svg>
+	<br>
+	table - used above
 	<br> 
-	tbody
+	tbody - used above
 	<br> 
-	td 
+	td - used above
 	<br>
-	template 
+	template -  used to hold client-side content that is not rendered when a page is loaded, can be used with JavaScript
+
+	<template>This is loaded, but not shown</template>
+
 	<br>
 	textarea - used in wireframe
 	<br>
-	tfoot 
+	tfoot - used above
 	<br>
-	th 
+	th - used above
 	<br>
-	thead 
+	thead - used above
 	<br>
-	time 
+	time - defines a human-readable date/time
+
+	<p>We met at <time>15:00</time> to work on our group project.</p>
+
 	<br>
-	title
+	title - used in wireframe
 	<br> 
-	tr 
+	tr - used above
 	<br>
-	track 
+	track - specifies text tracks that are used with audio/video files
 	<br>
-	u 
+	u - Underlines words like this <u>one</u>.
 	<br>
-	ul
+	ul - used in wireframe
 	<br> 
-	var 
+	var - Emphasizes a variable, like int <var>roots</var> = 10;
 	<br>
-	video
+	video - used to embed video content in your document <br>
+	<video src="http://techslides.com/demos/sample-videos/small.mp4" controls>
+	</video>
 	<br> 
-	wbr 
+	wbr - specifies a line break, which is seen when the browser is resized
 	<br>
+	<p>SuperCalifragilisticespiaclidoafiajfanoiajanvdnavodsbnvos<wbr>linebreakfjsdfjkdsjfdksljdsjcsdkjcslidvjdsbnvodsnvjdsnvodsjv<wbr>linebreaksckdscamc</p>
 
 
 
