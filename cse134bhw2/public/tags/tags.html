@@ -1,27 +1,53 @@
 <!DOCTYPE HTML>
 <html>
-<header>
+<head>
   <title>Tags</title>
-  <h1>Tags</h1>
-  <nav>
-  <ul>
-    <!-- Add tag links here -->
+</head>
+<style>
+	table, th, td {
+    border: 1px solid black;
+	}
+</style>
+<body>
+	<header>
+		<h1>Tags</h1>
+	</header>
+
+  <!-- Add tag links here -->
 
 	a - Already used in wireframe
 	<br>
-	abbr - The abbreviation of the United States of America is <abbr title="United States of America">USA</abbr>
+	abbr - The abbreviation of the United States of America is <abbr title="United States of America">USA</abbr>.
 	<br>
-	Address 
+	Address - The address of UCSD is <address>9500 Gilman Dr, La Jolla, CA 92093</address>
 	<br>
-	Applet (not support in html5)
+	area and map -  A map is an image with clickable areas, that lead to other images.
 	<br>
-	area
+	<img src="square.bmp" width="200" height="100" alt="Color" usemap="#colormap">
+	<map name="colormap">
+  		<area shape="rect" coords="0,0,100,100" alt="Green" href="green.jpg">
+  		<area shape="rect" coords="100,0,200,100" alt="Red" href="RED.jpg">
+	</map>
 	<br> 
-	article
+	article - 
+	<article>
+  		<h1>Article News</h1>
+  			<p>This article is self-contained and independent from the rest of this page.</p>
+	</article>
 	<br> 
-	aside
+	aside - 
+	<p>With this tag I can make asides</p>
+	<aside>
+	  <h4>Aside</h4>
+	  <p>An aside tag defines content aside from the content it is placed in.</p>
+	</aside>
 	<br> 
-	audio
+	audio - plays audio on the web page
+
+	<audio controls>
+	  <source src="audio.mp3" type="audio/mpeg">
+	  Your browser does not support the audio element.
+	</audio>
 	<br>
 	<b>This is an example of the b tag</b>
 	<br>
@@ -47,33 +73,76 @@
 	<br>
 	<p>button tag was used in wireframe.</p>
 	<br>
-	canvas
+	canvas - canvas is used to draw elements using JS, it is only a container for graphics
+
 	<br>
-	caption 
+	caption - defines a table caption
 	<br>
-	cite
+	cite - Cite is used when you are citing any information 
+		<p><cite>Martin Luther King, Jr.</cite> once said <q>Darkness cannot drive out darkness; only light can do that. Hate cannot drive out hate; only love can do that.	</q></p>
 	<br>
-	code
+	code - Code is used when you want to show that the following input is to be read as computer code
+	<p><code> system.out.println("Hello World"); </code></p>
 	<br> 
-	col 
+	col - specifies column properties for each column
 	<br>
-	colgroup
-	<br> 
-	data
-	<br> 
-	datalist 
+	colgroup - specifies a group of columns
 	<br>
-	dd 
+	(Table uses: table, caption, colgroup, col, thead, tr, th, td, tbody, tfoot)
+	<table>
+		<caption>Basic Table</caption>
+  		<colgroup>
+    		<col span="2" style="background-color:blue">
+    		<col style="background-color:yellow">
+  		</colgroup>
+  		<thead>
+  			<tr>
+    			<th>Month</th>
+    			<th>Day</th>
+    			<th>Year</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+	  		<tr>
+	    		<td>January</td>
+	    		<td>28</td>
+	    		<td>2017</td>
+	  		</tr>
+  		</tbody>
+  		<tfoot>
+  			<tr>
+  				<td>Sum:</td>
+  				<td>$100</td>
+  			</tr>
+  		</tfoot>
+	</table>
+
+	<br> 
+	datalist - Making a pre-defined list of data (colors)
+	  <input list="colors" name="color">
+	  <datalist id="colors">
+	    <option value="Red">
+	    <option value="Blue">
+	    <option value="Green">
+	    <option value="Yellow">
+	    <option value="Pink">
+	  </datalist> 
 	<br>
-	del
-	<br> 
-	dfn
-	<br> 
-	div
-	<br> 
-	dl 
+	dl, dt, and dd - Describes a description list with terms and descriptions
+	<h3>Shapes</h3>
+	<dl>
+		<dt>Square</dt>
+		<dd>A shape with 4 sides</dd>
+		<dt>Triangle</dt>
+		<dd>A shape with 3 sides</dd>
+	</dl>
 	<br>
-	dt 
+	del - <p>Defines words that have been deleted, like <del>this</del>.</p>
+	<br> 
+	dfn - represents the defining instance of a term
+	<p>A <dfn>chair</dfn> is a piece of furniture that you sit on.</p>
+	<br> 
+	div - used in wireframe
 	<br>
 	em 
 	<br>
@@ -89,25 +158,36 @@
 	<br> 
 	form
 	<br>
-	h1 
+	h1 - used in wireframe
 	<br>
-	h2 
+	h2 - used in wireframe
 	<br>
-	h3
+	h3 - used in wireframe
 	<br> 
-	h4 
+	h4 - used to define HTML headings (ranked 4th in importance)
 	<br>
-	h5 
+	h5 - used to define HTML headings (ranked 5th in importance)
 	<br>
-	h6
+	h6 - used to define HTML headings (ranked 6th in importance)
+	<p>
+		<h4>Computer Science</h4>
+		<h5>CSE134b</h5>
+		<h6>Web Client Languages</h6>
+	</p>
+
 	<br>
-	head 
+	head - used in wireframe
 	<br>
-	header 
+	header - used in wireframe
 	<br>
-	hr 
+	hr - used to seperate thematicly different content on your web page
+	<p>
+		<h1>Computer Science</h1>
+		<hr>
+		<h1>Economics</h1>
+	</p>
 	<br>
-	html
+	html - used in wireframe
 	<br> 
 	i 
 	<br>
@@ -133,8 +213,6 @@
 	<br>
 	main
 	<br> 
-	map 
-	<br>
 	mark
 	<br> 
 	Marquee (deprecated)
@@ -157,7 +235,7 @@
 	<br>
 	output 
 	<br>
-	p 
+	p - used in wireframe
 	<br>
 	param
 	<br> 
@@ -211,7 +289,7 @@
 	<br>
 	template 
 	<br>
-	textarea 
+	textarea - used in wireframe
 	<br>
 	tfoot 
 	<br>
@@ -242,9 +320,7 @@
 
   </ul>
   </nav>
-</header>
-
-<body>
 
 </body>
+
 </html>
