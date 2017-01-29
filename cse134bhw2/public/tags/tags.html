@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Tags</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <style>
 	table, th, td {
@@ -9,6 +10,7 @@
 	}
 </style>
 <body>
+  <main>
 	<header>
 		<h1>Tags</h1>
 	</header>
@@ -211,33 +213,61 @@
 	<br>
 	link 
 	<br>
-	main
+	<p>The main tag was used to surround the content of this page since these tags are the main content of the page</p>
 	<br> 
-	mark
+	<p>The <mark>mark</mark> tag highlights parts of the text.</p>
 	<br> 
-	Marquee (deprecated)
+	<marquee>This is a basic example of the marquee tag. It is deprecated. <img src="dancing-banana.gif"></marquee>
 	<br>
-	meta 
+	<p>The meta tag was used in this document in the head tag to set the viewport.</p> 
 	<br>
-	meter
+	<p>How cool is this page?:</p>
+	<meter value="2" min="0" max="10">10 out of 10</meter><br>
+	<p>The above shows the use of a meter tag</p>
+	<p><strong>Note:</strong> The &lt;meter&gt; tag is not supported in Internet Explorer, Edge 12, Safari 5 and earlier versions.</p>
 	<br> 
-	nav
+	<p>The nav tag was used in our wireframes</p>
 	<br> 
-	noscript 
+	<script>
+		document.write("Script tag!")
+	</script>
+	<p>If the above text says "Script tag!" then javascript is on. If it says "Noscript tag!" below, javascript is off. These are examples of using the script and noscript tags</p>
+	<noscript>Noscript tag!</noscript> 
 	<br>
-	object 
+	<video src="IMG_1843.mov" width="640" height="480" controls>
+	    <object data="flvplayer.swf" type="application/x-shockwave-flash">
+	        <param value="flvplayer.swf" name="movie"/>
+	    </object>
+	</video>
+	<p>Above is an example of the object tag, video, and param tags</p>
 	<br>
-	ol 
+	<p>Ordered list was used in the wireframe</p> 
 	<br>
-	optgroup 
+	<select>
+	  <optgroup label="Pizza Companies">
+	    <option value="dominos">Dominos</option>
+	    <option value="papajohn">Papa John's</option>
+	  </optgroup>
+	  <optgroup label="Burger Companies">
+	    <option value="burgerking">Burger King</option>
+	    <option value="mcdonalds">McDonalds</option>
+	  </optgroup>
+	</select> 
+	<p>Above is an example of option and optgroup tags as well as the select tag</p>
 	<br>
-	option 
-	<br>
-	output 
+	<form onsubmit="return false" oninput="z.value = parseInt(x.value) + parseInt(y.value)">
+	  <input name="x" type="number" step="any"> +
+	  <input name="y" type="number" step="any"> =
+	  <output name="z"></output>
+	</form> 
+	<p>Above is an example of the form, input, and output tags.</p>
 	<br>
 	p - used in wireframe
 	<br>
-	param
+	<pre>
+		This is an example     of    a    pre tag.
+		It preserves spaces and NEW    LINES.
+	</pre>
 	<br> 
 	pre
 	<br> 
@@ -320,7 +350,7 @@
 
   </ul>
   </nav>
-
+  </main>
 </body>
 
 </html>
