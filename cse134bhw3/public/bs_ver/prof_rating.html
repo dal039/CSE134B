@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Rate Professor </title>
+  <link rel="stylesheet" type="text/css" href="css/box.css">
+</head>
+<body>
+<div class="box center">
+  <form action="./professors.html">
+    <div>
+      <label>Grading Difficulty</label>
+      <select name="Difficulty">
+        <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="Hard">Hard</option>
+      </select>
+    </div>
+    <br>
+    <div>
+      <label>Helpfulness (out of 10)</label>
+      <input type="number" min="0" max="10" name="Helpfulness">
+    </div>
+    <br>
+    <div>
+      <label>Overall Rating (out of 10)</label>
+      <input type="number" min="0" max="10" name="Rating">
+    </div>
+    <br>
+    <button class="cancel" formaction="professors.html">Cancel</button>
+    <button class="submit" formaction="professors.html">Submit</button>
+  </form> 
+</div>
+</body>
+</html>
