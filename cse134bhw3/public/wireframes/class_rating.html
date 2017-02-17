@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rate Class</title>
+  <link rel="stylesheet" type="text/css" href="css/box.css">
+</head>
+<body>
+<div class="box center">
+  <form action="./overview.html">
+    <div>
+      <label>Difficulty</label>
+      <select name="Difficulty">
+        <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="Hard">Hard</option>
+      </select>    </div>
+    <br>
+    <div>
+      <label>Usefulness (out of 10)</label>
+      <input type="number" min="0" max="10" name="Usefulness">
+    </div>
+    <br>
+    <div>
+      <label>Overall Rating (out of 10) </label>
+      <input type="number" min="0" max="10" name="Rating">
+    </div>
+    <br>
+    <button class="cancel" formaction="overview.html">Cancel</button>
+    <button class="submit" formaction="overview.html">Submit</button>
+  </form>
+</div>
+</body>
+</html>
