@@ -1,0 +1,12 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/Cellar/node/7.4.0/bin/node /usr/local/bin/firebase deploy
+[debug] CLI Version:  3.2.1
+[debug] Platform:     darwin
+[debug] Node Version: v7.4.0
+[debug] Time:         Sat Jan 28 2017 21:43:49 GMT-0800 (PST)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/checkmyclass-22c54 
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/checkmyclass-22c54/tokens 
