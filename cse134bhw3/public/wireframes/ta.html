@@ -2,50 +2,53 @@
 <html>
 <head>
 	<title> CSE 123 - CheckMyClass </title>	
+	<link rel="stylesheet" type="text/css" href="css/classpage.css">
 </head>
 <body>
 	<header>
 		<a href="class_finder.html">CheckMyClass</a>
-		<a href="login_signup.html">Log Out</a>
+		<a href="login_signup.html" style="float:right">Log Out</a>
 	</header>
 
 	<section id="leftsidebar">
-		<h3>Navigation</h3>
 		<ul style="list-style: none;">
-			<li><a href="overview.html">Overview</a></li>
-			<li><a href="professors.html">Professor</a></li>
-			<li><a href="ta.html">TAs</a></li>
-			<li><a href="feedback.html">Feedback</a></li>
+			<form>
+				<li><button formaction="overview.html">Overview</button></li>
+				<li><button formaction="professors.html">Professor</button></li>
+				<li><button formaction="ta.html">TAs</button></li>
+				<li><button formaction="feedback.html">Feedback</button></li>
+			</form>
 		</ul>
 	</section>
 
-	<main>
+	<main id="main">
 		<h1> CSE 123 </h1>
 		<h2>John Doe</h2>
 		<h3>Helpfulness: 7.7 &nbsp; Overall Rating: 7.8 </h3>
-		<form>
+		<form id="boxes">
         	<button formaction="ta_rating.html">Rate</button>
-        	<button formaction="ta_edit.html">Edit</button>
     	</form>
 		<article id="description">
-			He REALLY makes sure you understand everything. Any holes in your understanding will definitely hurt you, but he is willing to help you work past it. <br>
-			That aside, he is a great TA who cares about your success in the class.
+			<h3>Comments</h3> 
+			<br />
+			He REALLY makes sure you understand everything. Any holes in your understanding will definitely hurt you, but he is willing to help you work past it. That aside, he is a great TA who cares about your success in the class.
 		</article>
 		
+
+		<div class="rightsidebar">
+			<img src="https://proofreadmyessay.co.uk/img/testimonial/Young_man_with_dimples1424606841.jpg" alt="TA" width="220" height="235">
+			<section id="contactinfo">
+				<h3>Contact John Doe</h3> <br />
+				Email: johndoe@ucsd.edu <br />
+				Office Hours: 24/7 CSE Basement
+			</section>	
+			<br />	
+			<form id="boxes">
+	       		<button formaction="ta_edit.html">Edit</button>
+	    	</form>
+		</div>
 	</main>
 
-	<section id="rightsidebar">
-		<img src="https://proofreadmyessay.co.uk/img/testimonial/Young_man_with_dimples1424606841.jpg" alt="TA" width="220" height="235">
-		<section id="contactinfo">
-			Contact John Doe <br>
-			Email: johndoe@ucsd.edu <br>
-			Office Hours: 24/7 CSE Basement
-		</section>	
-	</section>
-
-	<footer>
-		<a href="team.html"> About Us </a>
-	</footer>
 
 </body>
 </html>

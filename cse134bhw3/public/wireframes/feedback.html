@@ -2,24 +2,26 @@
 <html>
 <head>
 	<title> CSE 123 - CheckMyClass </title>	
+	<link rel="stylesheet" type="text/css" href="css/classpage.css">
 </head>
 <body>
 	<header>
 		<a href="class_finder.html">CheckMyClass</a>
-		<a href="login_signup.html">Log Out</a>
+		<a href="login_signup.html" style="float:right">Log Out</a>
 	</header>
 
 	<section id="leftsidebar">
-		<h3>Navigation</h3>
 		<ul style="list-style: none;">
-			<li><a href="overview.html">Overview</a></li>
-			<li><a href="professors.html">Professor</a></li>
-			<li><a href="ta.html">TAs</a></li>
-			<li><a href="feedback.html">Feedback</a></li>
+			<form>
+				<li><button formaction="overview.html">Overview</button></li>
+				<li><button formaction="professors.html">Professor</button></li>
+				<li><button formaction="ta.html">TAs</button></li>
+				<li><button formaction="feedback.html">Feedback</button></li>
+			</form>
 		</ul>
 	</section>
 
-	<main>
+	<main id="main">
 		<h1> CSE 123 </h1>
 		<h2>Feedback</h2>
 		<h3>Teddy Geisel &nbsp; Rating: 9.9 </h3>
@@ -27,20 +29,20 @@
 		<article id="description">
 			Best professor for the best class at the best university! I highly recommend CSE 123!
 		</article>
+
+		<br />
+
+		<textarea name="comment" form="comments" rows="4" cols="50">Comments about this class?</textarea>
+
+		<form action="/action_page.php" id="comments">
+  			Name: <input type="text" name="usrname">
+  			Rating: <input type="number" min="0" max="10" name="Rating">
+  			<input type="submit">
+		</form>
 		
 	</main>
 
-	<form>
 
-		<textarea id="comments">
-		</textarea>
-		<br>
-		<input type="submit" value="Submit">
-	</form>
-
-	<footer>
-		<a href="team.html"> About Us </a>
-	</footer>
 
 </body>
 </html>
