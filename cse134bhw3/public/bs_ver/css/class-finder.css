@@ -1,0 +1,35 @@
+.filters {
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+
+.course-item {
+	margin-bottom: 30px;	
+} 
+
+.courseBox {
+	display: inline-block;
+	color: black;
+	height: 100px;
+	width: 50%;
+	background-color: #fff5ee;
+	border-radius: 5px;
+}
+
+.courseBox p {
+	margin-top: 10px;
+}
+
+.content-block {
+	display: block;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+.checkbox-div {
+	margin-top: 5px;
+}
+
+.checkbox-inline {
+	font-size: 16px;
+}
