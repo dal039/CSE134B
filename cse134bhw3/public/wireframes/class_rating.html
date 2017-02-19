@@ -7,13 +7,14 @@
 <body>
 <div class="box center">
   <form action="./overview.html">
-    <div>
+    <div class="styled-select slate">
       <label>Difficulty</label>
       <select name="Difficulty">
         <option value="Easy">Easy</option>
         <option value="Medium">Medium</option>
         <option value="Hard">Hard</option>
-      </select>    </div>
+      </select>    
+    </div>
     <br>
     <div>
       <label>Usefulness (out of 10)</label>
@@ -25,8 +26,11 @@
       <input type="number" min="0" max="10" name="Rating">
     </div>
     <br>
-    <button class="cancel" formaction="overview.html">Cancel</button>
-    <button class="submit" formaction="overview.html">Submit</button>
+    <div>
+      <button class="cancel" formaction="overview.html">Cancel</button>
+      <button class="submit" formaction="overview.html">Submit</button>  
+    </div>
+    
   </form>
 </div>
 </body>

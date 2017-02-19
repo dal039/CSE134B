@@ -2,23 +2,30 @@
 <html>
 <head>
   <title>Log In</title>
+  <link rel="stylesheet" type="text/css" href="css/box.css">
 </head>
 
 <body>
   <header>
     <nav>
-      <a href="index.html">Home</a>
+      <a href="index.html"> <img src="./images/home.png" alt="ChartGo" height="30" width="30"></a>
     </nav>
   </header>
-  <h1>CheckMyClass</h1>
 
-
-  <form>
-    <input type="text" name="fname" placeholder="First name"><br>
-    <input type="text" name="lname" placeholder="Last name"><br>
-    <input type="text" name="email" placeholder="Email"><br>
-    <button formaction="class_finder.html">Sign Up!</button>
-    <button formaction="class_finder.html">Log In</button>
-  </form>
+  <div class="box center" id="login_form">
+    <h1>CheckMyClass</h1>
+    <form>
+      <input type="text" name="fname" placeholder="First name"><br>
+      <br>
+      <input type="text" name="lname" placeholder="Last name"><br>
+      <br>
+      <input type="text" name="email" placeholder="Email"><br>
+      <br>
+      <div>
+        <button class = "signup" formaction="class_finder.html">Sign Up!</button>
+        <button class = "login" formaction="class_finder.html">Log In</button>
+      </div>
+    </form>
+  </div>
 </body>
 </html>

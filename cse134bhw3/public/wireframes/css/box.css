@@ -1,3 +1,6 @@
+body{
+    font-size: 100%;
+}
 .box {
 	border-style: solid;
 	border-width: 1px;
@@ -7,72 +10,108 @@
 	background-color: #f2f2f2;
 	border-radius: 10px;
 }
+h1{
+    text-align:center;
+    font-family: Arial;
+    color: #00298F;
+}
+
 .center {
 	text-align: center;
 	position: fixed;
   	top: 40%;
   	left: 50%;
   	transform: translate(-50%, -50%);
+    display: table;
+}
+
+.center div button {
+    width: 40%;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin-top: 20px;
+    border-radius: 10px;
 }
 
 label {
-	font-size: 25px;
+	font-size: 1.2em;
 	font-family: Arial;
-	margin: 10px;
+	margin: 20px;
 	display: inline-block;
     float: left;
     clear: left;
-    width: 300px;
     text-align: left;
 }
 
-input {
+label ~ input {
 	padding: 10px;
     margin: 10px;
     box-sizing: border-box;
     display: inline-block;
-  	float: left;
+  	float: right;
+    clear:right;
+    border-radius: 10px;
+}
+
+#login_form input {
+    padding: 10px;
+    margin: 1px;
+    box-sizing: border-box;
+    display: inline-block;
+    clear:both;
+    width:90%;
+    border-radius: 10px;
+}
+
+
+#login_form{
+    width: 250px;
 }
 
 .cancel{
 	background-color: #f44336; /* Red */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    float: left;
 }
 
 .submit{
 	background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    float: right;
 }
 
-.upload{
-	background-color: #008CBA;; /* Blue */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+.signup{
+    background-color: #008CBA; /* Blue */
+    float: left;
 }
+
+.login{
+    background-color: #4CAF50; /* Green */
+    float: right;
+}
+
+
+textarea{
+    width: 100%;
+    clear: both;
+    border-radius: 10px;
+}
+.upload{
+	background-color: #008CBA; /* Blue */
+    position: absolute;
+    right: 5%;
+}
+
 
 select{
 	padding: 10px 7px;
     margin: 10px;
     box-sizing: border-box;
     display: inline-block;
-  	float: left;
+  	float: right;
 }
 
 #nextQuarter{
