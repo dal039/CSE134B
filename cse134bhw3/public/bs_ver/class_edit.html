@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Edit Class - CheckMyClass</title>
-  <link rel="stylesheet" type="text/css" href="css/box.css">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CSE 123 - CheckMyClass</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/overview.css" rel="stylesheet">
+    <link href="./css/cover-1.css" rel="stylesheet">
+  </head>
 <body>
 <div class= "box center">
-  <form action="./overview.html">
-    <div>
-      <label>Location</label>
-      <input type="text" name="Location">
-    </div>
-    <br>
-    <div>
-      <label>Offered next quarter?</label>
-      <input id="nextQuarter" type="checkbox" name="quarter" value="Offered">
-    </div>
-    <br>
-    <div>
-      <label>Description</label>
-      <textarea rows="10" cols="50" name="Description" placeholder="Edit Here"></textarea>
-    </div>
-    <br>
-    <button class="cancel" formaction="overview.html">Cancel</button>
-    <button class="submit" formaction="overview.html">Submit</button>
-  </form> 
+<form action="./overview.html">
+  <div class="form-group">
+    <label>Location</label>
+    <input type="text" class="form-control" id="location" placeholder="Location">
+  </div>
+  <div class="form-group">
+    <label>Description</label>
+    <textarea class="form-control" rows="10" cols="50" name="Description" placeholder="Edit Here"></textarea>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Offered next quarter?
+    </label>
+  </div>
+  <button type="cancel" class="btn btn-default pull-left" formaction="overview.html">Cancel</button>
+  <button type="submit" class="btn btn-default" formaction="overview.html">Submit</button>
+</form>
+
 </div>
 </body>
 </html>

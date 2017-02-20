@@ -38,3 +38,9 @@
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+.masthead {
+  position: fixed;
+  padding-top: 30px; 
+}
+

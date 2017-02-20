@@ -1,5 +1,111 @@
-.nav-tabs > li {
+.nav-tabs > li > a {
 	border: 1px solid #ddd;
 	border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
 }
+
+.nav-tabs {
+	margin-top: 10px;
+}
+
+.col-sm-6 article {
+	text-align: left;
+}
+
+.content-block {
+	text-align: left;
+}
+
+#graph {
+	padding: 10px;
+}
+
+.edit-btn {
+	margin-top: 5px;
+}
+
+.rate-btn {
+	margin-top: 20px;
+}
+
+main {
+	text-align: left;
+}
+
+#rightsidebar {
+	margin-top: 30px;
+	padding: 10px;
+	border: 1px solid #ddd;
+}
+
+.ratings {
+	line-height: 150%;
+}
+
+.feedback-entry {
+	margin-bottom: 20px;
+	padding-top: 5px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #fff5ee;
+	border-radius: 5px;
+	text-shadow: none;
+}
+
+.feedback-user h3, h4 {
+	display: inline;
+}
+
+.feedback-user h3 {
+	color: #333;
+	margin-right: 10px;
+}
+
+.feedback-user h4 {
+	color: black;
+}
+
+.feedback-text {
+	color: #333;
+}
+
+.box {
+	margin-left: 50%;
+	margin-right: 50%;
+	border: 1px solid #fff5ee;
+}
+
+/*
+.content-block {
+	display: inline-block;
+}
+
+.left-block {
+	float: left;
+	width: 50%;
+}
+
+.right-block {
+	float: right;
+	width: 50%;
+}
+
+.left-block h1 {
+	float: left;
+}
+
+.header-overview {
+	display: block;
+}
+
+.edit-box {
+	margin-top: 10px;
+	float: right;
+}
+
+.leftblockV article {
+
+}
+*/
+

@@ -21,11 +21,12 @@
     <link href="./css/cover-1.css" rel="stylesheet">
   </head>
 
-<body>
+
   <body>
     <div class="site-wrapper">
 
       <div class="site-wrapper-inner">
+        <div class="nav-wrap">
         <div class="cover-container">
           <div class="masthead clearfix">
           <div class="nav-container">
@@ -41,6 +42,7 @@
             </div>
           </div>
         </div>
+        </div>
 
         <div class="container">
             <section id="leftsidebar">
@@ -51,26 +53,34 @@
                     <li><a href="feedback.html">Feedback</a></li>
                 </ul>
             </section>
-            <h1>CSE 123</h1>
-            <form>
-                <button class="btn btn-default" formaction="class_edit.html">Edit</button>
-            </form>
-            <article>
-                <h2>Description</h2>
-                Web programming is by far one of the most difficult forms of programming facing today's computing professionals. <br>
-                While there are many Web developers, few are truly skilled in the field. <br>
-                A primary reason for this is the sheer number of technologies required to masterfully build a modern Web application. <br>
-                Add to this challenge a common lack of understanding of the delivery, security and even medium of the Web. 
-            </article>
 
-            <h2>Difficulty: Medium <br> Usefulness: 9.5 <br> Overall Ratng: 9.3 </h2>  
-            <form>
-                <button class="btn btn-default" formaction="class_rating.html">Rate</button>
-            </form>
-            <h3>Location: CENTER 112 <br> Offered next quarter?: Yes </h3>  
+            <div class="content-block">
+                <div class="col-sm-6">
+                    <div class="header-overview">
+                    <form>
+                        <button class="btn btn-default pull-right edit-btn" formaction="class_edit.html">Edit</button>
+                    </form>
+                    <h1>CSE 123</h1>
+                    </div>
+                    <article>
+                        Web programming is by far one of the most difficult forms of programming facing today's computing professionals.
+                        While there are many Web developers, few are truly skilled in the field.
+                        A primary reason for this is the sheer number of technologies required to masterfully build a modern Web application.
+                        Add to this challenge a common lack of understanding of the delivery, security and even medium of the Web. 
+                    </article>
 
-            <div id="graph">
-              <img src="./ChartGo.png" alt="ChartGo" height="450" width="450">
+                    <form
+                        <button class="btn btn-default pull-right rate-btn" formaction="class_rating.html">Rate</button>
+                    </form>
+                    <h3 class="ratings">Difficulty: Medium <br> Usefulness: 9.5 <br> Overall Ratng: 9.3 </h3>  
+                    <h3 class="ratings">Location: CENTER 112 <br> Offered next quarter?: Yes </h3>  
+                </div>
+
+                <div class="col-sm-6">
+                    <div id="graph">
+                      <img class="img-responsive" src="./ChartGo.png" alt="ChartGo" height="450" width="450">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
