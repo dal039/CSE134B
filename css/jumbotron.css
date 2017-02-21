@@ -1,0 +1,16 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.profile-img {
+	width: 100%;
+	height: 100%;
+}
+
+.brand {
+	margin-top: 12px;
+	margin-bottom: 0;
+	color: gray;
+}
