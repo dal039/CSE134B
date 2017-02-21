@@ -7,12 +7,6 @@
 	margin-bottom: 30px;	
 } 
 
-@media min-width: 990px {
-	.courseBox {
-		width: 50%;
-	}
-}
-
 .courseBox {
 	display: inline-block;
 	color: white;
