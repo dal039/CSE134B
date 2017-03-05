@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Log in/Sign Up - CheckMyClass</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/index-main.css" rel="stylesheet">
+    <link href="../css/signin.css" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCan5sw0l48qC_VBhdpdz7vN_hVv3LYo8g",
+        authDomain: "checkmyclass-22c54.firebaseapp.com",
+        databaseURL: "https://checkmyclass-22c54.firebaseio.com",
+        storageBucket: "checkmyclass-22c54.appspot.com",
+        messagingSenderId: "754689393631"
+      };
+      firebase.initializeApp(config);
+    </script>  
+    <script src="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.css" />
+
+  </head>
+
+  <body>
+
+      <div class="site-wrapper">
+        <div class="nav-bg"></div>
+        <div class="site-wrapper-inner">
+
+          <div class="cover-container">
+            <div class="masthead-wrap">
+            <div class="masthead clearfix">
+              <div class="inner">
+                <h3 class="masthead-brand"><a href="index.html">CheckMyClass</a></h3>
+                <nav>
+                  <ul class="nav masthead-nav">
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            </div>
+
+            <div class="cover-container">
+
+              <form class="form-signin">
+                <h2 class="form-signin-heading">Please sign in</h2>
+                <label for="inputEmail" class="sr-only">Email address</label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                  </label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block btn-login" formaction="class_finder.html" type="submit">Log in</button>
+                <button class="btn btn-lg btn-primary btn-block btn-signup" formaction="class_finder.html" type="submit">Sign Up</button>
+              </form>
+
+            </div> <!-- /container -->
+            <div id="firebaseui-auth-container"></div>
+
+          </div>
+        </div>
+      </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/login_signup.js"></script>
+
+    </body>
+</html>
