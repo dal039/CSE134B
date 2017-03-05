@@ -6,7 +6,7 @@ var ref = db.ref('info');
 
 window.addEventListener('load', function () {
    var vm = new Vue({
-	  el: "#app",
+	  el: ".site-wrapper",
 	  data: {
 	  	photo: "",
 	    email: "",
@@ -18,17 +18,17 @@ window.addEventListener('load', function () {
 	  }, 
 	  methods: {
 	    setInfo: function () {
-	    	if (this.name.trim() && this.theme.trim() && this.url.trim()) {
-	    		ref.push({
+	    	if (this.photo.trim() && this.email.trim() && this.hours.trim() && this.description.trim()) {
+	    		ref.set({
 	    			"photo": this.photo,
 	    			"email": this.email,
 	    			"hours": this.hours,
 	    			"description": this.description
-	    		})
-	    		this.photo: "",
-	    		this.email: "",
-	    		this.hours: "",
-	    		this.description: ""
+	    		});
+	    		this.photo: "";
+	    		this.email: "";
+	    		this.hours: "";
+	    		this.description: "";
 	    	}
 	    }
 	  }
