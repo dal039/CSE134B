@@ -31,10 +31,9 @@
         messagingSenderId: "754689393631"
       };
       firebase.initializeApp(config);
-    </script>  
-
-    <script src="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.js"></script>
-    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.css" />
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/authenticate.js"></script> 
   </head>
 
   <body>
@@ -49,7 +48,7 @@
                 <h3 class="masthead-brand"><a href="index.html">CheckMyClass</a></h3>
                 <nav>
                   <ul class="nav masthead-nav">
-                    <li class="active"><a id="logout-btn" href="login_signup.html">Log Out</a></li>
+                    <li class="active"><a id="logout-btn" href="">Log Out</a></li>
                   </ul>
                 </nav>
               </div>
@@ -149,9 +148,7 @@
       </div>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/login_signup.js"></script> 
   </body>
 </html>

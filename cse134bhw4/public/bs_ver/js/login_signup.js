@@ -1,30 +1,19 @@
 
+checkAuthStateChange();
+
 $(document).ready(function(){
-	authenticate();
 	emailLogInAuth();
 	emailSignUpAuth();
-	logOut();
-	/*checkAuthStateChange();*/
 });
 
-function logOut () {
-	$('#logout-btn').click(function(){
-		firebase.auth().signOut().then(function(){
-			/*indow.location = '../views/index.html'*/
-		}, function(error) {
-			console.log(error);
-		})
-	});
-};
-
 function checkAuthStateChange () {
-	var user = firebase.auth().currentUser;
-	console.log(user);
+	//var user = firebase.auth().currentUser;
 	firebase.auth().onAuthStateChanged(function(user) {
+		console.log(user);
 		if (user) {
 			window.location = '../views/class_finder.html';
 		} else {
-			window.location = '../views/index.html';
+			console.log('User is not logged in.');
 		}
 	});
 };
@@ -51,10 +40,9 @@ function emailLogInAuth () {
 		  	alert('Password is invalid.');
 		  }		  
 
-		  console.log(error);
+		  //console.log(error);
 		});
 
-		checkAuthStateChange();
 	});
 };
 
@@ -83,30 +71,6 @@ function emailSignUpAuth () {
 		  console.log(error);
 		});
 		
-		checkAuthStateChange();
 	});
 };
 
-function authenticate () {
-	// FirebaseUI config.
-  var uiConfig = {
-    signInSuccessUrl: '../views/class_finder.html',
-    signInOptions: [
-      // Leave the lines as is for the providers you want to offer your users.
-      firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-      //firebase.auth.EmailAuthProvider.PROVIDER_ID
-    ],
-    // Terms of service url.
-    tosUrl: '<your-tos-url>',
-    credentialHelper: firebaseui.auth.CredentialHelper.NONE
-  };
-  // Initialize the FirebaseUI Widget using Firebase.
-  var ui = new firebaseui.auth.AuthUI(firebase.auth());
-  console.log('boo');
-  // The start method will wait until the DOM is loaded.
-  ui.start('#firebaseui-auth-container', uiConfig);
-
-  console.log('booboo');
-
-
-};
