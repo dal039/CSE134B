@@ -9,7 +9,4 @@ var config = {
 };
 
 // Initialize Firebase App
-var app = firebase.initializeApp(config);
-
-// Get a reference to the database service
-var database = app.database();
+firebase.initializeApp(config);

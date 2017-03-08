@@ -8,7 +8,6 @@ window.addEventListener('load', function () {
    var vm = new Vue({
 	  el: ".ratings",
 	  data: {
-	  	difficulty: "",
 	    helpfulness: "",
 	    rating: ""
 	  },
@@ -17,16 +16,12 @@ window.addEventListener('load', function () {
 	  }, 
 	  methods: {
 	    setRatings: function () {
-	    	if (this.difficulty.trim() && this.helpfulness.trim() && this.rating.trim()) {
-	    		ref.set({
-	    			"difficulty": this.difficulty,
-	    			"helpfulness": this.helpfulness,
-	    			"rating": this.rating
-	    		});
-	    		this.difficulty: "";
-	    		this.helpfulness: "";
-	    		this.rating: "";
-	    	}
+    		ref.set({
+    			"helpfulness": this.helpfulness,
+    			"rating": this.rating
+    		})
+    		this.helpfulness= ""
+    		this.rating= ""
 	    }
 	  }
 	});
