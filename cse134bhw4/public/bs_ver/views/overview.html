@@ -19,13 +19,13 @@
     <!-- Custom styles for this template -->
     <link href="../css/overview.css" rel="stylesheet">
     <link href="../css/cover-1.css" rel="stylesheet">
-    
     <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
     <script src="https://unpkg.com/vue"></script>
     <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
     <script src="../js/app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../js/authenticate.js"></script> 
+    <script src="../js/ratings.js"></script> 
     <script src="../js/overview.js"></script>
   </head>
 
@@ -70,9 +70,14 @@
                     </div>
                     <p>{{course_description[0]['.value']}}</p>
 
-                    <a class="btn btn-default pull-right btn-rate" href="class_rating.html">Rate</a>
-                    <h3 class="ratings">Difficulty: Medium <br> Usefulness: 9.5 <br> Overall Ratng: 9.3 </h3>  
                     <h3 class="ratings">Location: {{course_description[1]['.value']}} <br> Offered next quarter?: {{course_description[2]['.value']}} </h3>
+                </div>
+                <div class="col-sm-6" id="class-rating-form"> 
+                    <div class="header-overview">
+                        <h1>Ratings</h1>
+                        <a class="btn btn-default pull-right btn-rate" href="class_rating.html">Rate</a>
+                    </div>
+                    <h3 class="ratings">Difficulty: {{ratings[0]['.value']}}<br> Usefulness: {{ratings[2]['.value']}} <br> Overall Ratng: {{ratings[1]['.value']}} </h3>  
                 </div>
 
                 <div class="col-sm-6">
