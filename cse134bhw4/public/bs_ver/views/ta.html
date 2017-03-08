@@ -23,9 +23,6 @@
     <script src="../js/app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../js/authenticate.js"></script> 
-    <script src="https://unpkg.com/vue"></script>
-    <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
-    <script src="../js/ratings.js"></script> 
   </head>
 
 <body>
@@ -68,7 +65,7 @@
         <form>
               <button class="btn btn-default btn-rate pull-right" formaction="ta_rating.html">Rate</button>
         </form>
-				<h3 class="ratings">Helpfulness: {{rating.helpfulness}}<br/>Overall Rating: {{rating.rating}} </h3>
+				<h3 class="ratings">Helpfulness: <span id = "ta-help"></span><br/>Overall Rating: <span id="ta-rating"></span> </h3>
         <form>
 		        	<button class="btn btn-default btn-edit pull-right" formaction="ta_edit.html">Edit</button>
 		    	</form>
