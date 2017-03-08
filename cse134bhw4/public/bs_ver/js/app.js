@@ -9,7 +9,9 @@ var config = {
 
 // Initialize Firebase App
 var app = firebase.initializeApp(config);
-var db = app.database();
+
+
+/*var db = app.database();
 
 $(document).ready(function() {
 
@@ -35,3 +37,4 @@ $(document).ready(function() {
 $("#submit-feedback").click(writeFeedback);
 
 });
+*/
