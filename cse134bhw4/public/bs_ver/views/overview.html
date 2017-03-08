@@ -21,9 +21,12 @@
     <link href="../css/cover-1.css" rel="stylesheet">
     
     <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
     <script src="../js/app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../js/authenticate.js"></script> 
+    <script src="../js/overview.js"></script>
   </head>
 
 
@@ -60,25 +63,16 @@
             </section>
 
             <div class="content-block">
-                <div class="col-sm-6">
+                <div class="col-sm-6" id='edit-course'>
                     <div class="header-overview">
-                    <form>
-                        <button class="btn btn-default pull-right btn-edit" formaction="class_edit.html">Edit</button>
-                    </form>
+                    <a class="btn btn-default pull-right btn-edit" href="class_edit.html">Edit</a>
                     <h1>CSE 123</h1>
                     </div>
-                    <article>
-                        Web programming is by far one of the most difficult forms of programming facing today's computing professionals.
-                        While there are many Web developers, few are truly skilled in the field.
-                        A primary reason for this is the sheer number of technologies required to masterfully build a modern Web application.
-                        Add to this challenge a common lack of understanding of the delivery, security and even medium of the Web. 
-                    </article>
+                    <p>{{course_description[0]['.value']}}</p>
 
-                    <form>
-                        <button class="btn btn-default pull-right btn-rate" formaction="class_rating.html">Rate</button>
-                    </form>
+                    <a class="btn btn-default pull-right btn-rate" href="class_rating.html">Rate</a>
                     <h3 class="ratings">Difficulty: Medium <br> Usefulness: 9.5 <br> Overall Ratng: 9.3 </h3>  
-                    <h3 class="ratings">Location: CENTER 112 <br> Offered next quarter?: Yes </h3>  
+                    <h3 class="ratings">Location: {{course_description[1]['.value']}} <br> Offered next quarter?: {{course_description[2]['.value']}} </h3>
                 </div>
 
                 <div class="col-sm-6">

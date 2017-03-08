@@ -9,4 +9,5 @@ var config = {
 };
 
 // Initialize Firebase App
-firebase.initializeApp(config);
+var app = firebase.initializeApp(config);
+
