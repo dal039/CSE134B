@@ -37,6 +37,10 @@ main {
 	text-align: left;
 }
 
+#feedback-form {
+	color: black;
+}
+
 #rightsidebar {
 	margin-top: 30px;
 	padding: 10px;
