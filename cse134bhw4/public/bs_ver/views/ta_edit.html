@@ -25,30 +25,31 @@
     <script src="../js/authenticate.js"></script> 
     <script src="https://unpkg.com/vue"></script>
     <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
+    <script src="../js/editing.js"></script>
   </head>
 
 
   <body>
-    <div class="box center">
-      <form action="./professors.html">
+    <div class="box center" id="ta-edit-form">
+      <form @submit="editTA">
         <h3 class="box-label">Edit TA Description</h3>
         <label class="btn btn-default btn-file">
-          Upload photo...<input type="file" style="display: none;">
+          Upload photo...<input type="file" style="display: none;" v-model="ta_image">
         </label>
         <br>
         <div>
           <label>Email</label>
-          <input class="form-control" type="text" name="Email">
+          <input class="form-control" v-model="ta_email" type="text" name="Email">
         </div>
         <br>
         <div>
           <label>Office Hours</label>
-          <input class="form-control" type="text" name="Hours">
+          <input class="form-control" v-model="ta_hours" type="text" name="Hours">
         </div>
         <br>
         <div>
           <label>Description</label>
-          <textarea class="form-control" rows="10" cols="50" name="Description" placeholder="Edit Here"></textarea>
+          <textarea class="form-control" rows="10" cols="50" v-model="ta_description" name="Description" placeholder="Edit Here"></textarea>
         </div>
         <br>
         <button type="cancel" class="btn btn-default btn-cancel pull-left" formaction="ta.html">Cancel</button>

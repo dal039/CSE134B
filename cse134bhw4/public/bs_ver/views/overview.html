@@ -26,7 +26,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../js/authenticate.js"></script> 
     <script src="../js/ratings.js"></script> 
-    <script src="../js/overview.js"></script>
+    <script src="../js/editing.js"></script>
   </head>
 
 
@@ -63,21 +63,21 @@
             </section>
 
             <div class="content-block">
-                <div class="col-sm-6" id='edit-course'>
+                <div class="col-sm-6" id='class-edit-form'>
                     <div class="header-overview">
                     <a class="btn btn-default pull-right btn-edit" href="class_edit.html">Edit</a>
                     <h1>CSE 123</h1>
                     </div>
-                    <p>{{course_description[0]['.value']}}</p>
+                    <p>{{class_edits[0]['.value']}}</p>
 
-                    <h3 class="ratings">Location: {{course_description[1]['.value']}} <br> Offered next quarter?: {{course_description[2]['.value']}} </h3>
+                    <h3 class="ratings">Location: {{class_edits[1]['.value']}} <br> Offered next quarter?: {{class_edits[2]['.value']}} </h3>
                 </div>
                 <div class="col-sm-6" id="class-rating-form"> 
                     <div class="header-overview">
                         <h1>Ratings</h1>
                         <a class="btn btn-default pull-right btn-rate" href="class_rating.html">Rate</a>
                     </div>
-                    <h3 class="ratings">Difficulty: {{ratings[0]['.value']}}<br> Usefulness: {{ratings[2]['.value']}} <br> Overall Ratng: {{ratings[1]['.value']}} </h3>  
+                    <h3 class="ratings">Difficulty: {{class_ratings[0]['.value']}}<br> Usefulness: {{class_ratings[2]['.value']}} <br> Overall Ratng: {{class_ratings[1]['.value']}} </h3>  
                 </div>
 
                 <div class="col-sm-6">

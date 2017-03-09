@@ -26,6 +26,7 @@
     <script src="https://unpkg.com/vue"></script>
     <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
     <script src="../js/ratings.js"></script> 
+    <script type="../js/editing.js"></script>
   </head>
 
 <body>
@@ -67,7 +68,7 @@
 			<form>
 	        	<button class="btn btn-default btn-rate pull-right" formaction="prof_rating.html">Rate</button>
 	        </form>
-			<h3 class="ratings">Grading Difficulty: {{ratings[3]['.value']}}<br/>Helpfulness:  {{ratings[4]['.value']}}<br/>Overall Rating:  {{ratings[5]['.value']}}</h3>
+			<h3 class="ratings">Grading Difficulty: {{prof_ratings[3]['.value']}}<br/>Helpfulness:  {{prof_ratings[4]['.value']}}<br/>Overall Rating:  {{prof_ratings[5]['.value']}}</h3>
 
 	        <form>
 	        	<button class="btn btn-default btn-edit pull-right" formaction="prof_edit.html">Edit</button>

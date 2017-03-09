@@ -12,7 +12,7 @@ window.addEventListener('load', function() {
 			ta_rating: ""
 		},
   		firebase: {
-		  ratings: ratingRef
+		  ta_ratings: ratingRef
 		}, 
 		methods: {
 			rateTA: function () {
@@ -26,7 +26,7 @@ window.addEventListener('load', function() {
 		}
 	});
 
-	var professor_vm = new Vue({
+	var prof_vm = new Vue({
 		el: '#prof-rating-form',
 		data: {
 			prof_difficulty: "",
@@ -34,7 +34,7 @@ window.addEventListener('load', function() {
 			prof_rating: ""
 		},
   		firebase: {
-		  ratings: ratingRef
+		  prof_ratings: ratingRef
 		}, 
 		methods: {
 			rateProf: function () {
@@ -55,7 +55,7 @@ window.addEventListener('load', function() {
 			class_rating: ""
 		},
   		firebase: {
-		  ratings: ratingRef
+		  class_ratings: ratingRef
 		}, 
 		methods: {
 			rateClass: function () {

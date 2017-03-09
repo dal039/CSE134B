@@ -20,35 +20,36 @@
     <link href="../css/overview.css" rel="stylesheet">
     <link href="../css/cover-1.css" rel="stylesheet">
     <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
     <script src="../js/app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../js/authenticate.js"></script> 
-    <script src="https://unpkg.com/vue"></script>
-    <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
+    <script src="../js/editing.js"></script>
   </head>
 
 
   <body>
-    <div class="box center">
-    	<form action="./professors.html">
+    <div class="box center" id="prof-edit-form">
+    	<form  @submit="editProf">
         <h3 class="box-label">Edit Professor Description</h3>
         <label class="btn btn-default btn-file">
-          Upload photo...<input type="file" style="display: none;">
+          Upload photo...<input type="file" v-model="prof_image" style="display: none;">
         </label>
     		<br>
     		<div>
     			<label>Email</label>
-    			<input class="form-control" type="text" name="Email">
+    			<input class="form-control" type="text" v-model="prof_email" name="Email">
     		</div>
     		<br>
     		<div>
     			<label>Office Hours</label>
-    			<input class="form-control" type="text" name="Hours">
+    			<input class="form-control" type="text" v-model="prof_hours" name="Hours">
     		</div>
     		<br>
     		<div>
     			<label>Description</label>
-    			<textarea class="form-control" rows="10" cols="50" name="Description" placeholder="Edit Here"></textarea>
+    			<textarea class="form-control" rows="10" cols="50" v-model="prof_description" name="Description" placeholder="Edit Here"></textarea>
     		</div>
     		<br>
         <button type="cancel" class="btn btn-default btn-cancel pull-left" formaction="professors.html">Cancel</button>
