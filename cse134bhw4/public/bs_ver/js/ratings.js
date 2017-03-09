@@ -1,6 +1,6 @@
 var db = app.database();
 
-var database = document.getElementById('database').innerHTML;
+var database = "CSE 123 - CheckMyClass";
 
 var TA = "TA";
 var Prof = "Professor";
@@ -26,7 +26,7 @@ window.addEventListener('load', function() {
 		}, 
 		methods: {
 			rateTA: function () {
-				ratingRef.update({
+				taratingRef.update({
 					"TA_Helpfulness": this.ta_helpfulness,
 					"TA_Rating": this.ta_rating
 				})
@@ -48,7 +48,7 @@ window.addEventListener('load', function() {
 		}, 
 		methods: {
 			rateProf: function () {
-				ratingRef.update({
+				profratingRef.update({
 					"Professor_Difficulty": this.prof_difficulty,
 					"Professor_Helpfulness": this.prof_helpfulness,
 					"Professor_Rating": this.prof_rating
@@ -69,7 +69,7 @@ window.addEventListener('load', function() {
 		}, 
 		methods: {
 			rateClass: function () {
-				ratingRef.update({
+				classratingRef.update({
 					"Class_Difficulty": this.class_difficulty,
 					"Class_Usefulness": this.class_usefulness,
 					"Class_Rating": this.class_rating

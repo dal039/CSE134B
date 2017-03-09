@@ -1,9 +1,8 @@
 var db = app.database();
 
-if(document.getElementById("database") != null ) {
-	var database = document.getElementById("database").innerHTML;
-}
-var ref = db.ref('/' + database + '/feedback/');
+var database = "CSE 123 - CheckMyClass";
+
+var ref = db.ref('/' + database + '/Feedback/');
 
 
 $(document).ready(function() {

@@ -26,6 +26,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../js/authenticate.js"></script> 
     <script src="../js/ratings.js"></script> 
+    <script src="../js/editing.js"></script>
   </head>
 
 <body>
@@ -68,27 +69,28 @@
         <form>
               <button class="btn btn-default btn-rate pull-right" formaction="ta_rating.html">Rate</button>
         </form>
-				<h3 class="ratings">Helpfulness: {{ta_ratings[6]['.value']}}<br/>Overall Rating: {{ta_ratings[7]['.value']}}</h3>
+				<h3 class="ratings">Helpfulness: {{ta_ratings[0]['.value']}}<br/>Overall Rating:  {{ta_ratings[1]['.value']}}</h3>
         <form>
 		        	<button class="btn btn-default btn-edit pull-right" formaction="ta_edit.html">Edit</button>
 		    	</form>
-				<article id="description">
-					<h2>Description</h2>
-					He REALLY makes sure you understand everything. Any holes in your understanding will definitely hurt you, but he is willing to help you work past it. <br>
-					That aside, he is a great TA who cares about your success in the class.
-				</article>
-				
+								
 			</main>
+      <div id="ta-edit-form">
+      <article id="description">
+          <h2>Description</h2>
+          {{ta_edits[0]['.value']}}
+      </article>
 
 			<section class="col-sm-4" id="rightsidebar">
         <p>John Doe</p>
-				<img src="https://proofreadmyessay.co.uk/img/testimonial/Young_man_with_dimples1424606841.jpg" alt="TA" width="220" height="235">
+				<img src="{{ta_edits[3]['.value']" alt="TA" width="220" height="235">
 				<section id="contactinfo">
 					Contact John Doe <br>
-					Email: johndoe@ucsd.edu <br>
-					Office Hours: 24/7 CSE Basement
+					Email:  {{ta_edits[1]['.value']}}<br>
+					Office Hours: {{ta_edits[2]['.value']}}
 				</section>	
 			</section>
+      </div>
 		</div>
 	</div>
   </div>

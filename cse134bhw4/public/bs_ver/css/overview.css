@@ -154,4 +154,5 @@ main {
 
 #database{
 	display: none;
+	visibility: hidden;
 }

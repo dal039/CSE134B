@@ -1,8 +1,17 @@
 var db = app.database();
 
-var database = document.getElementById("database").innerHTML;
+var database = "CSE 123 - CheckMyClass";
 
-var editRef = db.ref('/' + database + '/edits');
+
+var TA = "TA";
+var Prof = "Professor";
+var Class = "Class";
+
+var taeditRef = db.ref('/' + database + '/' + TA + '/edits');
+
+var profeditRef = db.ref('/' + database + '/' + Prof + '/edits');
+
+var classeditRef = db.ref('/' + database + '/' + Class + '/edits');
 
 Vue.use(VueFire);
 
@@ -16,15 +25,15 @@ window.addEventListener('load', function() {
 			ta_description: ""
 		},
   		firebase: {
-		  ta_edits: editRef
+		  ta_edits: taeditRef
 		}, 
 		methods: {
 			editTA: function () {
-				editRef.update({
+				taeditRef.update({
 					"TA_Image": this.ta_image,
 					"TA_Email": this.ta_email,
 					"TA_Hours": this.ta_hours,
-					"TA_Helpfulness": this.ta_description
+					"TA_Description": this.ta_description
 				})
 			}
 
@@ -41,15 +50,15 @@ window.addEventListener('load', function() {
 			prof_description: ""
 		},
   		firebase: {
-		  prof_edits: editRef
+		  prof_edits: profeditRef
 		}, 
 		methods: {
 			editProf: function (event) {
-				editRef.update({
+				profeditRef.update({
 					"Prof_Image": this.prof_image,
 					"Prof_Email": this.prof_email,
 					"Prof_Hours": this.prof_hours,
-					"Prof_Helpfulness": this.prof_description
+					"Prof_Description": this.prof_description
 				})
 			}
 		}
@@ -63,11 +72,11 @@ window.addEventListener('load', function() {
 			offering: "No"
 		},
   		firebase: {
-		  class_edits: editRef
+		  class_edits: classeditRef
 		}, 
 		methods: {
 			editClass: function () {
-				editRef.update({
+				classeditRef.update({
 					"Class_Location": this.location,
 					"Class_Description": this.description,
 					"Class_Offering": this.offering
