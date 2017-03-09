@@ -29,30 +29,30 @@ Vue.use(VueFire);
 
 window.addEventListener('load', function() {
 	var vm = new Vue({
-		el: '#feedback',
+		el: '#feed',
 		data: {
 			usrname: "",
 			rating: "",
-			feedback: ""
+			comment: ""
 		},
   	firebase: {
-		  feedback: ref
+		  feedbackList: ref
 		}, 
 		methods: {
 			addFeedback: function () {
 				ref.push({
 					"name": this.usrname,
 					"rating": this.rating,
-					"feedback": this.feedback
+					"comment": this.comment
 				})
 
 				this.name = ""
 	    		this.rating = ""
-	    		this.feedback = ""
+	    		this.comment = ""
 			},
 
-			removeFeedback: function() {
-				
+			removeFeedback: function(key) {
+				ref.child(key).remove();
 			}
 		}
 	});

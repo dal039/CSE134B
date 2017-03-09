@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title id="className">CSE 123 - CheckMyClass</title>
+    <title id="className" >CSE 123 - CheckMyClass</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -61,25 +61,25 @@
                 </ul>
             </section>
 
-			<main id="feedback">
+			<main id="feed">
 				<h1> CSE 123 </h1>
 				<h2>Feedback</h2>
-				<div class="feedback-entry">
+				<div class="feedback-entry" v-for="feedback in feedbackList" >
 					<div class="feedback-user">
-						<h3 id="nameFb" class="ratings">Name: {{feedback[0].name}}</h3><h4 class="ratings"> Rating: {{feedback[0].rating}}</h4>
+						<h3 id="nameFb" class="ratings">Name: {{feedback.name}}</h3><h4 class="ratings"> Rating: {{feedback.rating}}</h4>
 					</div>
 					<article class="feedback-text" id="description">
-						{{feedback[0].feedback}}
+						{{feedback.feedback}}
 					</article>
 
-          <button class="btn btn-block btn-danger" @click="removeFeedback()">
+          <button class="btn btn-block btn-danger" @click="removeFeedback(feedback['.key'])">
 				</div>	
 			
 
 			<form id="feedback-form" @submit="addFeedback">
         Name: <input type="text" id="usrname" v-model="usrname"> &nbsp; &nbsp;
         Rating: <input type="number" id="rating" v-model="rating" min="0" max="10" name="Rating"> <br /> <br />
-				<textarea class="form-control" v-model="feedback" id="feedback">
+				<textarea class="form-control" v-model="comment" id="feedback">
 				</textarea>
 				<br>
 				<input id="submit-feedback" class="btn btn-default btn-submit" type="submit" value="Submit">
