@@ -66,22 +66,25 @@
 				<h2>Feedback</h2>
 				<div class="feedback-entry">
 					<div class="feedback-user">
-						<h3 id="nameFb" class="ratings">Name:</h3><h4 class="ratings"> Rating: 9.9</h4>
+						<h3 id="nameFb" class="ratings">Name: {{feedback[0].name}}</h3><h4 class="ratings"> Rating: {{feedback[0].rating}}</h4>
 					</div>
 					<article class="feedback-text" id="description">
-						Best professor for the best class at the best university! I highly recommend CSE 123!
+						{{feedback[0].feedback}}
 					</article>
-				</div>	
-			</main>
 
-			<form id="feedback-form">
-        Name: <input type="text" id="usrname"> &nbsp; &nbsp;
-        Rating: <input type="number" id="rating" min="0" max="10" name="Rating"> <br /> <br />
-				<textarea class="form-control" id="comments">
+          <button class="btn btn-block btn-danger" @click="removeFeedback()">
+				</div>	
+			
+
+			<form id="feedback-form" @submit="addFeedback">
+        Name: <input type="text" id="usrname" v-model="usrname"> &nbsp; &nbsp;
+        Rating: <input type="number" id="rating" v-model="rating" min="0" max="10" name="Rating"> <br /> <br />
+				<textarea class="form-control" v-model="feedback" id="feedback">
 				</textarea>
 				<br>
 				<input id="submit-feedback" class="btn btn-default btn-submit" type="submit" value="Submit">
 			</form>
+      </main>
 
 		</div>
     </div>

@@ -6,7 +6,7 @@ var ref = db.ref('/' + className + '/feedback/');
 
 
 $(document).ready(function() {
-	function writeFeedback() {
+	/*function writeFeedback() {
 		console.log(className);
 
 		var feedback ={
@@ -22,7 +22,7 @@ $(document).ready(function() {
 		});
 	}
 
-	$("#submit-feedback").click(writeFeedback);
+	$("#submit-feedback").click(writeFeedback);*/
 });
 
 Vue.use(VueFire);
@@ -31,7 +31,7 @@ window.addEventListener('load', function() {
 	var vm = new Vue({
 		el: '#feedback',
 		data: {
-			name: "",
+			usrname: "",
 			rating: "",
 			feedback: ""
 		},
@@ -40,11 +40,19 @@ window.addEventListener('load', function() {
 		}, 
 		methods: {
 			addFeedback: function () {
-				ref.set({
-					"name": this.name,
+				ref.push({
+					"name": this.usrname,
 					"rating": this.rating,
 					"feedback": this.feedback
 				})
+
+				this.name = ""
+	    		this.rating = ""
+	    		this.feedback = ""
+			},
+
+			removeFeedback: function() {
+				
 			}
 		}
 	});
