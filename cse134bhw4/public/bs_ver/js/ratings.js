@@ -1,6 +1,16 @@
 var db = app.database();
 
-var ratingRef = db.ref('/ratings');
+var database = document.getElementById('database').innerHTML;
+
+var TA = "TA";
+var Prof = "Professor";
+var Class = "Class";
+var taratingRef = db.ref('/' + database + '/' + TA + '/ratings');
+
+var profratingRef = db.ref('/' + database + '/' + Prof + '/ratings');
+
+var classratingRef = db.ref('/' + database + '/' + Class + '/ratings');
+
 
 Vue.use(VueFire);
 
@@ -12,7 +22,7 @@ window.addEventListener('load', function() {
 			ta_rating: ""
 		},
   		firebase: {
-		  ta_ratings: ratingRef
+		  ta_ratings: taratingRef
 		}, 
 		methods: {
 			rateTA: function () {
@@ -34,7 +44,7 @@ window.addEventListener('load', function() {
 			prof_rating: ""
 		},
   		firebase: {
-		  prof_ratings: ratingRef
+		  prof_ratings: profratingRef
 		}, 
 		methods: {
 			rateProf: function () {
@@ -55,7 +65,7 @@ window.addEventListener('load', function() {
 			class_rating: ""
 		},
   		firebase: {
-		  class_ratings: ratingRef
+		  class_ratings: classratingRef
 		}, 
 		methods: {
 			rateClass: function () {

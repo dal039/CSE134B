@@ -1,8 +1,9 @@
 var db = app.database();
 
-var className = document.getElementById("className").innerHTML
-
-var ref = db.ref('/' + className + '/feedback/');
+if(document.getElementById("database") != null ) {
+	var database = document.getElementById("database").innerHTML;
+}
+var ref = db.ref('/' + database + '/feedback/');
 
 
 $(document).ready(function() {

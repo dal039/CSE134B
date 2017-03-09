@@ -151,3 +151,7 @@ main {
 	background-color: #d3d3d3 !important;
 	border-color: #d3d3d3 !important;
 }
+
+#database{
+	display: none;
+}

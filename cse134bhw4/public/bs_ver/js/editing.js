@@ -1,6 +1,8 @@
 var db = app.database();
 
-var editRef = db.ref('/edits');
+var database = document.getElementById("database").innerHTML;
+
+var editRef = db.ref('/' + database + '/edits');
 
 Vue.use(VueFire);
 
