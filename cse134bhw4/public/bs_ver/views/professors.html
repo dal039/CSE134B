@@ -29,70 +29,69 @@
     <script src="../js/editing.js"></script>
   </head>
 
-<body>
+  <body>
 
     <div class="site-wrapper">
 
       <div class="site-wrapper-inner">
         <div class="nav-wrap">
-        <div class="cover-container">
-          <div class="masthead clearfix">
-          <div class="nav-container">
-            <div class="inner">
-              <h3 class="masthead-brand"><a href="index.html">CheckMyClass</a></h3>
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li class="active"><a id="logout-btn" href="login_signup.html">Log Out</a></li>
-                  <li class="active"><a href="class_finder.html">Classes</a></li> 
-                </ul>
-              </nav>
-            </div>
+          <div class="cover-container">
+            <div class="masthead clearfix">
+            <div class="nav-container">
+              <div class="inner">
+                <h3 class="masthead-brand"><a href="index.html">CheckMyClass</a></h3>
+                <nav>
+                  <ul class="nav masthead-nav">
+                    <li class="active"><a id="logout-btn" href="login_signup.html">Log Out</a></li>
+                    <li class="active"><a href="class_finder.html">Classes</a></li> 
+                  </ul>
+                </nav>
+              </div>
+              </div>
             </div>
           </div>
         </div>
-        </div>
 
         <div class="container">
-            <section id="leftsidebar">
-                <ul class="nav nav-tabs" style="list-style: none;">
-                    <li><a href="overview.html">Overview</a></li>
-                    <li><a href="professors.html">Professor</a></li>
-                    <li><a href="ta.html">TAs</a></li>
-                    <li><a href="feedback.html">Feedback</a></li>
-                </ul>
-            </section>
-		<div class="col-sm-8" id="prof-rating-form">
-			<h1> CSE 123 </h1>
-   		<h2>Professor X</h2>
-			<form>
-      	<button class="btn btn-default btn-rate pull-right" formaction="prof_rating.html">Rate</button>
-      </form>
-			<h3 class="ratings">Grading Difficulty: {{prof_ratings[0]['.value']}}<br/>Helpfulness:  {{prof_ratings[1]['.value']}}<br/>Overall Rating:  {{prof_ratings[2]['.value']}}</h3>
-      <form>
-      	<button class="btn btn-default btn-edit pull-right" formaction="prof_edit.html">Edit</button>
-    	</form>
-					
-	  </div>
-    <div id="prof-edit-form">
-      <article class="col-sm-8" id="description" >
-        <h2>Description</h2>
-        {{prof_edits[0]['.value']}}
-      </article>
+          <section id="leftsidebar">
+              <ul class="nav nav-tabs" style="list-style: none;">
+                  <li><a href="overview.html">Overview</a></li>
+                  <li><a href="professors.html">Professor</a></li>
+                  <li><a href="ta.html">TAs</a></li>
+                  <li><a href="feedback.html">Feedback</a></li>
+              </ul>
+          </section>
+      		<div class="col-sm-8 main"> 
+            <div class="main" id="prof-rating-form">
+        			<h1> CSE 123 </h1>
+           		<h2>Professor X</h2>
+              <a class="btn btn-default btn-rate pull-right" href="prof_rating.html">Rate</a>
+        			<h3 class="ratings">Grading Difficulty: {{prof_ratings[0]['.value']}}<br/>Helpfulness:  {{prof_ratings[1]['.value']}}<br/>Overall Rating:  {{prof_ratings[2]['.value']}}</h3>
+            	<a class="btn btn-default btn-edit pull-right" href="prof_edit.html">Edit</a>
+      			</div>
+            <br>
+            <div id="prof-edit-form-1">
+              <article id="description">
+                <h2>Description</h2>
+                {{prof_edits[0]['.value']}}
+              </article>
+            </div>
+          </div>
+          <div class="col-sm-4" id="prof-edit-form-2">
+        		<section id="rightsidebar">
+        			<p>Professor X</p>
+        			<img src="" alt="Prof">
+        			<section id="contactinfo">
+        				<h3>Contact Info</h3>
+        				Professor X <br>
+        				Email: {{prof_edits[1]['.value']}} <br>
+        				Office Hours: {{prof_edits[2]['.value']}} <br>
+        			</section>	
+        		</section>
+          </div>
+        </div>
 
-  		<section class="col-sm-4" id="rightsidebar">
-  			<p>Professor X</p>
-  			<img src="" alt="Prof">
-  			<section id="contactinfo">
-  				<h3>Contact Info</h3>
-  				Professor X <br>
-  				Email: {{prof_edits[1]['.value']}} <br>
-  				Office Hours: {{prof_edits[2]['.value']}} <br>
-  			</section>	
-  		</section>
-    </div>
-
-	  </div>
-	  </div>
+  	  </div>
 	  </div>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../js/bootstrap.min.js"></script>

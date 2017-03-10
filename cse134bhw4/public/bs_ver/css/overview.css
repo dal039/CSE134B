@@ -33,7 +33,7 @@
 	margin-top: 20px;
 }
 
-main {
+.main {
 	text-align: left;
 }
 
@@ -53,25 +53,27 @@ main {
 
 .feedback-entry {
 	margin-bottom: 25px;
-	padding-top: 5px;
+	padding-top: 10px;
 	padding-bottom: 15px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
 	background-color: #fff5ee;
 	border-radius: 5px;
 	text-shadow: none;
+	text-align: left;
 }
 
 div.feedback-form-submit {
-	color:black;
+	color: black;
 	margin-bottom: 20px;
-	padding-top: 5px;
-	padding-bottom: 15px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
 	background-color: #ffffff;
 	border-radius: 5px;
 	text-shadow: none;
+	text-align: left;
 }
 
 .feedback-user h3, h4 {
@@ -89,6 +91,16 @@ div.feedback-form-submit {
 
 .feedback-text {
 	color: #333;
+	margin: 15px 20px 15px 20px;
+}
+
+#submit-feedback {
+	background-color: #B0C4DE;
+}
+
+#submit-feedback:hover {
+	background-color: #93AED2 !important;
+	border-color: #93AED2 !important;
 }
 
 @media screen and (min-width: 768px) {
@@ -164,8 +176,16 @@ div.feedback-form-submit {
 	border-color: #d3d3d3 !important;
 }
 
-#database{
+#database {
 	display: none;
 	visibility: hidden;
+}
+
+.name-rating {
+	margin-bottom: 10px;
+}
+
+.feedback-textarea {
+	resize: vertical;
 }
 

@@ -61,35 +61,32 @@
                     <li><a href="feedback.html">Feedback</a></li>
                 </ul>
             </section>
+      <div class="col-sm-8 main">
+  			<main id="ta-rating-form">
+  				<h1> CSE 123 </h1>
+  				<h2>John Doe</h2>
+          <a class="btn btn-default btn-rate pull-right" href="ta_rating.html">Rate</a>
+    			<h3 class="ratings">Helpfulness: {{ta_ratings[0]['.value']}}<br/>Overall Rating:  {{ta_ratings[1]['.value']}}</h3>
+          <a class="btn btn-default btn-edit pull-right" href="ta_edit.html">Edit</a>			
+  			</main>
+        <div id="ta-edit-form-1">
+          <article id="description">
+              <h2>Description</h2>
+              {{ta_edits[0]['.value']}}
+          </article>
+        </div>
+      </div>
+      <div class="col-sm-4" id="ta-edit-form-2">
+  			<section id="rightsidebar">
+          <p>John Doe</p>
+  				<img src="{{ta_edits[3]['.value']}}" alt="TA">
+  				<section id="contactinfo">
+  					Contact John Doe <br>
+  					Email:  {{ta_edits[1]['.value']}}<br>
+  					Office Hours: {{ta_edits[2]['.value']}}
+  				</section>	
 
-			<main class="col-sm-8" id = "ta-rating-form">
-
-				<h1> CSE 123 </h1>
-				<h2>John Doe</h2>
-        <form>
-              <button class="btn btn-default btn-rate pull-right" formaction="ta_rating.html">Rate</button>
-        </form>
-				<h3 class="ratings">Helpfulness: {{ta_ratings[0]['.value']}}<br/>Overall Rating:  {{ta_ratings[1]['.value']}}</h3>
-        <form>
-		        	<button class="btn btn-default btn-edit pull-right" formaction="ta_edit.html">Edit</button>
-		    	</form>
-								
-			</main>
-      <div id="ta-edit-form">
-      <article class="col-sm-8" id="description">
-          <h2>Description</h2>
-          {{ta_edits[0]['.value']}}
-      </article>
-
-			<section class="col-sm-4" id="rightsidebar">
-        <p>John Doe</p>
-				<img src="{{ta_edits[3]['.value']" alt="TA" width="220" height="235">
-				<section id="contactinfo">
-					Contact John Doe <br>
-					Email:  {{ta_edits[1]['.value']}}<br>
-					Office Hours: {{ta_edits[2]['.value']}}
-				</section>	
-			</section>
+  			</section>
       </div>
 		</div>
 	</div>

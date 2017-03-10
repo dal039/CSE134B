@@ -64,7 +64,8 @@
 				<h2>Feedback</h2>
 				<div class="feedback-entry" v-for="feedback in feedbackList" >
 					<div class="feedback-user">
-						<h3 id="nameFb" class="ratings">Name: {{feedback.name}}</h3><h4 class="ratings"> Rating: {{feedback.rating}}</h4>
+						<h3 id="nameFb" class="ratings">{{feedback.name}}</h3>
+            <h4 class="ratings" style="float: right; margin-right: 50px;"> Rating: {{feedback.rating}}</h4>
 					</div>
 					<article class="feedback-text" id="description">
 						{{feedback.comment}}
@@ -75,13 +76,13 @@
 		  
         <div class="feedback-form-submit">	
     			<form id="feedback-form feedback-form-submit" @submit="addFeedback">
-            <div class="form-inline">
-            <label class="label-form" for="username">Name: </label>
-            <input class="form-control" type="text" id="usrname" v-model="usrname" name="username"> &nbsp; &nbsp;
-            <label class="label-form" for="Rating">Rating: </label>
-            <input class="form-control" type="number" id="rating" v-model="rating" min="0" max="10" name="Rating">
+            <div class="form-inline name-rating">
+              <label class="label-form" for="username">Name: </label>
+              <input class="form-control" type="text" id="usrname" v-model="usrname" name="username"> &nbsp; &nbsp;
+              <label class="label-form" for="Rating">Rating: </label>
+              <input class="form-control" type="number" id="rating" v-model="rating" min="0" max="10" name="Rating">
             </div>
-    				<textarea class="form-control" v-model="comment" id="feedback">
+    				<textarea class="form-control feedback-textarea" v-model="comment" id="feedback" placeholder="Input feedback here...">
     				</textarea>
     				<br>
     				<input id="submit-feedback" class="btn btn-default btn-submit" type="submit" value="Submit">
