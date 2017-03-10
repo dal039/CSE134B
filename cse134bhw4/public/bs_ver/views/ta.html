@@ -66,30 +66,32 @@
 
 				<h1> CSE 123 </h1>
 				<h2>John Doe</h2>
-        <form>
-              <button class="btn btn-default btn-rate pull-right" formaction="ta_rating.html">Rate</button>
-        </form>
-				<h3 class="ratings">Helpfulness: {{ta_ratings[0]['.value']}}<br/>Overall Rating:  {{ta_ratings[1]['.value']}}</h3>
-        <form>
-		        	<button class="btn btn-default btn-edit pull-right" formaction="ta_edit.html">Edit</button>
-		    	</form>
-								
+  			<h3 class="ratings">Helpfulness: {{ta_ratings[0]['.value']}}<br/>Overall Rating:  {{ta_ratings[1]['.value']}}</h3>
+        								
 			</main>
       <div id="ta-edit-form">
-      <article class="col-sm-8" id="description">
-          <h2>Description</h2>
-          {{ta_edits[0]['.value']}}
-      </article>
+      
+  			<section class="col-sm-4" id="rightsidebar">
+          <p>John Doe</p>
+  				<img src="{{ta_edits[3]['.value']}}" alt="TA">
+  				<section id="contactinfo">
+  					Contact John Doe <br>
+  					Email:  {{ta_edits[1]['.value']}}<br>
+  					Office Hours: {{ta_edits[2]['.value']}}
+  				</section>	
+          <form>
+              <button class="btn btn-default btn-rate pull-right" formaction="ta_rating.html">Rate</button>
+          </form>
+          <form>
+              <button class="btn btn-default btn-edit pull-left" formaction="ta_edit.html">Edit</button>
+          </form>
 
-			<section class="col-sm-4" id="rightsidebar">
-        <p>John Doe</p>
-				<img src="{{ta_edits[3]['.value']" alt="TA" width="220" height="235">
-				<section id="contactinfo">
-					Contact John Doe <br>
-					Email:  {{ta_edits[1]['.value']}}<br>
-					Office Hours: {{ta_edits[2]['.value']}}
-				</section>	
-			</section>
+  			</section>
+        <br>
+        <article id="description" style="float: left">
+            <h2>Description</h2>
+            {{ta_edits[0]['.value']}}
+        </article>
       </div>
 		</div>
 	</div>
