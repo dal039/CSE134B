@@ -5,8 +5,8 @@ var database = "CSE 123 - CheckMyClass";
 var ref = db.ref('/' + database + '/Feedback/');
 
 
-$(document).ready(function() {
-	/*function writeFeedback() {
+/*$(document).ready(function() {
+	function writeFeedback() {
 		console.log(className);
 
 		var feedback ={
@@ -22,8 +22,8 @@ $(document).ready(function() {
 		});
 	}
 
-	$("#submit-feedback").click(writeFeedback);*/
-});
+	$("#submit-feedback").click(writeFeedback);
+});*/
 
 Vue.use(VueFire);
 

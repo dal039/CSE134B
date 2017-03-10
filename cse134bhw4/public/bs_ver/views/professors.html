@@ -61,36 +61,34 @@
                     <li><a href="feedback.html">Feedback</a></li>
                 </ul>
             </section>
-
-		<main class="col-sm-8" id = "prof-rating-form">
+		<div class="col-sm-8" id="prof-rating-form">
 			<h1> CSE 123 </h1>
-	   		<h2>Professor X</h2>
+   		<h2>Professor X</h2>
 			<form>
-	        	<button class="btn btn-default btn-rate pull-right" formaction="prof_rating.html">Rate</button>
-	        </form>
+      	<button class="btn btn-default btn-rate pull-right" formaction="prof_rating.html">Rate</button>
+      </form>
 			<h3 class="ratings">Grading Difficulty: {{prof_ratings[0]['.value']}}<br/>Helpfulness:  {{prof_ratings[1]['.value']}}<br/>Overall Rating:  {{prof_ratings[2]['.value']}}</h3>
-
-	        <form>
-	        	<button class="btn btn-default btn-edit pull-right" formaction="prof_edit.html">Edit</button>
-	    	</form>
+      <form>
+      	<button class="btn btn-default btn-edit pull-right" formaction="prof_edit.html">Edit</button>
+    	</form>
 					
-		</main>
+	  </div>
     <div id="prof-edit-form">
       <article class="col-sm-8" id="description" >
         <h2>Description</h2>
         {{prof_edits[0]['.value']}}
       </article>
 
-		<section class="col-sm-4" id="rightsidebar">
-			<p>Professor X</p>
-			<img src="" alt="Prof">
-			<section id="contactinfo">
-				<h3>Contact Info</h3>
-				Professor X <br>
-				Email: {{prof_edits[1]['.value']}} <br>
-				Office Hours: {{prof_edits[2]['.value']}} <br>
-			</section>	
-		</section>
+  		<section class="col-sm-4" id="rightsidebar">
+  			<p>Professor X</p>
+  			<img src="" alt="Prof">
+  			<section id="contactinfo">
+  				<h3>Contact Info</h3>
+  				Professor X <br>
+  				Email: {{prof_edits[1]['.value']}} <br>
+  				Office Hours: {{prof_edits[2]['.value']}} <br>
+  			</section>	
+  		</section>
     </div>
 
 	  </div>

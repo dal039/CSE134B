@@ -52,12 +52,24 @@ main {
 }
 
 .feedback-entry {
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 	padding-top: 5px;
 	padding-bottom: 15px;
 	padding-left: 10px;
 	padding-right: 10px;
 	background-color: #fff5ee;
+	border-radius: 5px;
+	text-shadow: none;
+}
+
+div.feedback-form-submit {
+	color:black;
+	margin-bottom: 20px;
+	padding-top: 5px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #ffffff;
 	border-radius: 5px;
 	text-shadow: none;
 }
@@ -151,3 +163,9 @@ main {
 	background-color: #d3d3d3 !important;
 	border-color: #d3d3d3 !important;
 }
+
+#database{
+	display: none;
+	visibility: hidden;
+}
+

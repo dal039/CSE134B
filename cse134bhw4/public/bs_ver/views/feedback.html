@@ -13,12 +13,11 @@
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../css/overview.css" rel="stylesheet">
     <link href="../css/cover-1.css" rel="stylesheet">
+    <link href="../css/overview.css" rel="stylesheet">
+    
     <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
     <script src="https://unpkg.com/vue"></script>
     <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
@@ -71,18 +70,23 @@
 						{{feedback.comment}}
 					</article>
 
-          <button class="btn btn-block btn-danger" @click="removeFeedback(feedback['.key'])">
+          <button class="btn btn-danger" @click="removeFeedback(feedback['.key'])">Remove</button>
 				</div>	
-			
-
-			<form id="feedback-form" @submit="addFeedback">
-        Name: <input type="text" id="usrname" v-model="usrname"> &nbsp; &nbsp;
-        Rating: <input type="number" id="rating" v-model="rating" min="0" max="10" name="Rating"> <br /> <br />
-				<textarea class="form-control" v-model="comment" id="feedback">
-				</textarea>
-				<br>
-				<input id="submit-feedback" class="btn btn-default btn-submit" type="submit" value="Submit">
-			</form>
+		  
+        <div class="feedback-form-submit">	
+    			<form id="feedback-form feedback-form-submit" @submit="addFeedback">
+            <div class="form-inline">
+            <label class="label-form" for="username">Name: </label>
+            <input class="form-control" type="text" id="usrname" v-model="usrname" name="username"> &nbsp; &nbsp;
+            <label class="label-form" for="Rating">Rating: </label>
+            <input class="form-control" type="number" id="rating" v-model="rating" min="0" max="10" name="Rating">
+            </div>
+    				<textarea class="form-control" v-model="comment" id="feedback">
+    				</textarea>
+    				<br>
+    				<input id="submit-feedback" class="btn btn-default btn-submit" type="submit" value="Submit">
+    			</form>
+        </div>
       </main>
 
 		</div>
