@@ -32,11 +32,10 @@
   <body>
     <div id="database" >CSE 123 - CheckMyClass</div>
     <div class="box center" id="prof-edit-form-1">
-    	<form  @submit="editProf">
-        <h3 class="box-label">Edit Professor Description</h3>
-        <label class="btn btn-default btn-file">
-          Upload photo...<input type="file" v-model="prof_image" style="display: none;">
-        </label>
+    	<form id="upload-data" @submit.prevent="editProf">
+            <h3 class="box-label">Edit Professor Description</h3>
+            <label class="btn btn-default btn-file">Upload photo...</label>
+            <input type="file" id="img-upload" name="img-upload" accept="image/*" style="display: ;">
     		<br>
     		<div>
     			<label>Email</label>
@@ -53,8 +52,8 @@
     			<textarea class="form-control" rows="10" cols="50" v-model="prof_description" name="Description" placeholder="Edit Here"></textarea>
     		</div>
     		<br>
-        <button type="cancel" class="btn btn-default btn-cancel pull-left" formaction="professors.html">Cancel</button>
-        <button type="submit" class="btn btn-default btn-submit pull-right" formaction="professors.html">Submit</button>
+            <button type="cancel" class="btn btn-default btn-cancel pull-left" formaction="professors.html">Cancel</button>
+            <button type="submit" class="btn btn-default btn-submit pull-right" formaction="professors.html">Submit</button>
     	</form> 
     </div>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

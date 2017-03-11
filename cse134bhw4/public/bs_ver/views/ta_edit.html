@@ -32,10 +32,10 @@
   <body>
     <div id="database" >CSE 123 - CheckMyClass</div>
     <div class="box center" id="ta-edit-form-1">
-      <form @submit="editTA">
+      <form id="upload-data" @submit="editTA">
         <h3 class="box-label">Edit TA Description</h3>
         <label class="btn btn-default btn-file">
-          Upload photo...<input type="file" style="display: none;" v-model="ta_image">
+          Upload photo...<input type="file" id="img-upload" accept="image/*" style="display: none;" v-model="ta_image">
         </label>
         <br>
         <div>
