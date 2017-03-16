@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Rate Class - CheckMyClass</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/overview.css" rel="stylesheet">
+    <link href="../css/cover-1.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/authenticate.js"></script>
+    <script src="../js/ratings.js"></script> 
+  </head>
+
+  <body>
+    <div id="database" >CSE 123 - CheckMyClass</div>
+    <div class="box-small center" id = "class-rating-form">
+      <form @submit="rateClass">
+        <h3 class="box-label">Rate Class</h3>
+        <div>
+          <label>Difficulty</label>
+          <select class="form-control difficulty" v-model="class_difficulty" name="Difficulty">
+            <option value="Easy">Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>
+          </select>    
+        </div>
+        <br>
+        <div>
+          <label>Usefulness (out of 10)</label>
+          <input class="form-control use" v-model="class_usefulness" type="number" min="0" max="10" name="Usefulness">
+        </div>
+        <br>
+        <div>
+          <label>Overall Rating (out of 10) </label>
+          <input class="form-control rating" v-model="class_rating" type="number" min="0" max="10" name="Rating">
+        </div>
+        <br>
+        <button type="cancel" class="btn btn-default btn-cancel pull-left" formaction="overview.html">Cancel</button>
+        <button type="submit" class="btn btn-default btn-submit pull-right" formaction="overview.html">Submit</button>
+      </form>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>

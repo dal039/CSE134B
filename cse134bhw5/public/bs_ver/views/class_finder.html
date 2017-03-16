@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Class Finder - CheckMyClass</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/cover-1.css" rel="stylesheet">
+    <link href="../css/class-finder.css" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/authenticate.js"></script> 
+  </head>
+
+  <body>
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+        <div class="nav-wrap">
+          <div class="cover-container">
+            <div class="masthead clearfix">
+            <div class="nav-container">
+              <div class="inner">
+                <h3 class="masthead-brand"><a href="index.html">CheckMyClass</a></h3>
+                <nav>
+                  <ul class="nav masthead-nav">
+                    <li class="active"><a id="logout-btn" href="">Log Out</a></li>
+                  </ul>
+                </nav>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-block">
+        <div class="container">
+          <h1 class="cover-heading">Search for a class or pick one from below</h1>
+          <div class="row filters">
+            <div class="col-xs-2">
+              <select class="form-control">
+                <option value="fa15">FA15</option>
+                <option value="wi16">WI16</option>
+                <option value="sp16">SP16</option>
+                <option value="fa16">FA18</option>
+                <option value="wi17">WI17</option>
+                <option value="sp17">SP17</option>
+              </select>
+            </div>
+            <div class="col-xs-6 checkbox-div">
+              <label class="checkbox-inline"><input type="checkbox" name="lowerdiv">LD</label>
+              <label class="checkbox-inline"><input type="checkbox" name="upperdiv">UD</label>
+              <label class="checkbox-inline"><input type="checkbox" name="graduate">GD</label>
+            </div>
+            <div class="col-xs-4">
+              <input class="form-control" type="text" name="search" placeholder="e.g. CSE134B">
+            </div>
+          </div>
+          <div class="wrap">
+            <div class="row courses">
+              <div class="col-xs-4 col-lg-4 course-item">
+                <a class="courseBox" href="overview.html">
+                  <p class="course-label">CSE 100</p>
+                  <p class="course-text">Lorem ipsum dolor sit amet.</p>
+                </a>
+              </div>
+              <div class="col-xs-4 col-lg-4 course-item">
+                <a class="courseBox" href="overview.html">
+                  <p class="course-label">CSE 101</p>
+                  <p class="course-text">Lorem ipsum dolor sit amet.</p>
+                </a>
+              </div>
+              <div class="col-xs-4 col-lg-4 course-item">
+                <a class="courseBox" href="overview.html">
+                  <p class="course-label">CSE 102</p>
+                  <p class="course-text">Lorem ipsum dolor sit amet.</p>
+                </a>
+              </div>
+              <div class="col-xs-4 col-lg-4 course-item">
+                <a class="courseBox" href="overview.html">
+                  <p class="course-label">CSE 103</p>
+                  <p class="course-text">Lorem ipsum dolor sit amet.</p>
+                </a>
+              </div>
+              <div class="col-xs-4 col-lg-4 course-item">
+                <a class="courseBox" href="overview.html">
+                  <p class="course-label">CSE 105</p>
+                  <p class="course-text">Lorem ipsum dolor sit amet.</p>
+                </a>
+              </div>
+              <div class="col-xs-4 col-lg-4 course-item">
+                <a class="courseBox" href="overview.html">
+                  <p class="course-label">CSE 107</p>
+                  <p class="course-text">Lorem ipsum dolor sit amet.</p>
+                </a>
+              </div>
+              <div class="col-xs-4 col-lg-4 course-item">
+                <a class="courseBox" href="overview.html">
+                  <p class="course-label">CSE 110</p>
+                  <p class="course-text">Lorem ipsum dolor sit amet.</p>
+                </a>
+              </div>
+              <div class="col-xs-4 col-lg-4 course-item">
+                <a class="courseBox" href="overview.html">
+                  <p class="course-label">CSE 111</p>
+                  <p class="course-text">Lorem ipsum dolor sit amet.</p>
+                </a>
+              </div>
+              <div class="col-xs-4 col-lg-4 course-item">
+                <a class="courseBox" href="overview.html">
+                  <p class="course-label">CSE 112</p>
+                  <p class="course-text">Lorem ipsum dolor sit amet.</p>
+                </a>
+              </div>
+              <div class="col-xs-4 col-lg-4 course-item">
+                <a class="courseBox" href="overview.html">
+                  <p class="course-label">CSE 123</p>
+                  <p class="course-text">Lorem ipsum dolor sit amet.</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>

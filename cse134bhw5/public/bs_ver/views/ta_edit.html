@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TA Edit - CheckMyClass</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/overview.css" rel="stylesheet">
+    <link href="../css/cover-1.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/authenticate.js"></script> 
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
+    <script src="../js/editing.js"></script>
+  </head>
+
+
+  <body>
+    <div id="database" >CSE 123 - CheckMyClass</div>
+    <div class="box center" id="ta-edit-form-1">
+      <form id="upload-data" @submit="editTA">
+        <h3 class="box-label">Edit TA Description</h3>
+        <label> Upload Photo</label>
+        <input type="file" id="img-upload" @change="onFileChange" v-model="ta_image" name="img-upload" accept="image/*" style="display: ;">
+        <br>
+        <div>
+          <label>Email</label>
+          <input class="form-control" v-model="ta_email" type="text" name="Email">
+        </div>
+        <br>
+        <div>
+          <label>Office Hours</label>
+          <input class="form-control" v-model="ta_hours" type="text" name="Hours">
+        </div>
+        <br>
+        <div>
+          <label>Description</label>
+          <textarea class="form-control" rows="10" cols="50" v-model="ta_description" name="Description" placeholder="Edit Here"></textarea>
+        </div>
+        <br>
+        <button type="cancel" class="btn btn-default btn-cancel pull-left" formaction="ta.html">Cancel</button>
+        <button type="submit" class="btn btn-default btn-submit pull-right" formaction="ta.html">Submit</button>
+      </form> 
+    </div>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
