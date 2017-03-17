@@ -1,8 +1,8 @@
 var db = app.database();
 
-var database = "CSE 123 - CheckMyClass";
+var database = sessionStorage.getItem('classname');
 
-var ref = db.ref('/' + database + '/Feedback/');
+var ref = db.ref('/Classes/' + database + '/Feedback/');
 
 
 /*$(document).ready(function() {

@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>CSE 123 - CheckMyClass</title>
+    <title></title>
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -27,6 +27,7 @@
     <script src="../js/authenticate.js"></script> 
     <script src="../js/ratings.js"></script> 
     <script src="../js/editing.js"></script>
+    <script src="../js/title.js"></script>
   </head>
 
 
@@ -67,7 +68,7 @@
                     <div id='class-edit-form'>
                         <div class="header-overview">
                             <a class="btn btn-default pull-right btn-edit" href="class_edit.html">Edit</a>
-                            <h1>CSE 123</h1>
+                            <h1 id="className"></h1>
                         </div>
                         <h2>Description</h2> 
                         <p>{{class_edits[0]['.value']}}</p>

@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>CSE 123 - CheckMyClass</title>
+    <title></title>
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -27,6 +27,8 @@
     <script src="../js/authenticate.js"></script> 
     <script src="../js/ratings.js"></script> 
     <script src="../js/editing.js"></script>
+    <script src="../js/title.js"></script>
+
   </head>
 
 <body>
@@ -63,7 +65,7 @@
             </section>
       <div class="col-sm-8 main">
   			<main id="ta-rating-form">
-  				<h1> CSE 123 </h1>
+  				<h1 id="className"></h1>
   				<h2>John Doe</h2>
           <a class="btn btn-default btn-rate pull-right" href="ta_rating.html">Rate</a>
     			<h3 class="ratings">Helpfulness: {{ta_ratings[0]['.value']}}<br/>Overall Rating:  {{ta_ratings[1]['.value']}}</h3>

@@ -1,15 +1,15 @@
 var db = app.database();
 
-var database = "CSE 123 - CheckMyClass";
+var database = sessionStorage.getItem('classname');
 
 var TA = "TA";
 var Prof = "Professor";
 var Class = "Class";
-var taratingRef = db.ref('/' + database + '/' + TA + '/ratings');
+var taratingRef = db.ref('/Classes/' + database + '/' + TA + '/ratings');
 
-var profratingRef = db.ref('/' + database + '/' + Prof + '/ratings');
+var profratingRef = db.ref('/Classes/' + database + '/' + Prof + '/ratings');
 
-var classratingRef = db.ref('/' + database + '/' + Class + '/ratings');
+var classratingRef = db.ref('/Classes/' + database + '/' + Class + '/ratings');
 
 
 Vue.use(VueFire);
