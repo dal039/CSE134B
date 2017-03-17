@@ -34,7 +34,7 @@
 
 .courseBox:hover{
 	text-decoration: none;
-	background-color: #98fb98;
+	background-color: #ffe1cc;
 }
 
 .content-block {
@@ -53,8 +53,25 @@
 
 .wrap {
 	background-color: #ddd;
-	padding-top: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	padding-left: 5%;
 	padding-right: 5%;
 	border-radius: 5px;
 }
+
+.add-class-btn {
+	float: right;
+}
+
+.add-class-btn:hover {
+	background-color: #d3d3d3;
+	border-color: #d3d3d3;
+}
+
+
+.courses {
+	margin-top: 45px;
+}
+
+

@@ -12,7 +12,22 @@
 a,
 a:focus,
 a:hover {
+  display: inline-block;
   color: #fff;
+  text-decoration: none;
+}
+
+h3 > a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+
+h3 > a:hover::after {
+    width: 100%;
 }
 
 /* Custom default button */

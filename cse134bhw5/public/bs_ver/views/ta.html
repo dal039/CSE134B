@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title></title>
+    <title>CSE 123 - CheckMyClass</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -27,8 +27,6 @@
     <script src="../js/authenticate.js"></script> 
     <script src="../js/ratings.js"></script> 
     <script src="../js/editing.js"></script>
-    <script src="../js/title.js"></script>
-
   </head>
 
 <body>
@@ -57,15 +55,15 @@
         <div class="container">
             <section id="leftsidebar">
                 <ul class="nav nav-tabs" style="list-style: none;">
-                    <li><a href="overview.html">Overview</a></li>
-                    <li><a href="professors.html">Professor</a></li>
+                    <li class="hvr-bounce-to-top"><a href="overview.html">Overview</a></li>
+                    <li class="hvr-bounce-to-top"><a href="professors.html">Professor</a></li>
                     <li class="active"><a href="ta.html">TAs</a></li>
-                    <li><a href="feedback.html">Feedback</a></li>
+                    <li class="hvr-bounce-to-top"><a href="feedback.html">Feedback</a></li>
                 </ul>
             </section>
       <div class="col-sm-8 main">
   			<main id="ta-rating-form">
-  				<h1 id="className"></h1>
+  				<h1> CSE 123 </h1>
   				<h2>John Doe</h2>
           <a class="btn btn-default btn-rate pull-right" href="ta_rating.html">Rate</a>
     			<h3 class="ratings">Helpfulness: {{ta_ratings[0]['.value']}}<br/>Overall Rating:  {{ta_ratings[1]['.value']}}</h3>
@@ -80,7 +78,7 @@
       </div>
       <div class="col-sm-4" id="ta-edit-form-2">
   			<section id="rightsidebar">
-  				<img class="img-responsive" v-bind:src="ta_edits[3]['.value']" width= "300" height="300" alt="TA">
+  				<img class="img-responsive" v-bind:src="ta_edits[3]['.value']" width= "300" height="300" alt="TA image">
   				<section id="contactinfo">
             <h3>Contact Info</h3>
   					John Doe <br>

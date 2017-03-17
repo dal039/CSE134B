@@ -53,9 +53,6 @@
         <div class="content-block">
         <div class="container">
           <h1 class="cover-heading">Search for a class or pick one from below</h1>
-          <div>
-            <input type="button" onclick="location.href='./add_class.html';" value="Add Class" />
-          </div>
           <div class="row filters">
             <div class="col-xs-2">
               <select class="form-control">
@@ -77,6 +74,9 @@
             </div>
           </div>
           <div class="wrap" id="class-form">
+            <div>
+              <input type="button" class="add-class-btn btn btn-default" onclick="location.href='./add_class.html';" value="Add Class" />
+            </div>
             <div class="row courses">
               <div class="col-xs-4 col-lg-4 course-item" v-for="classBox in classes" >
                 <a class="courseBox" href="overview.html">
