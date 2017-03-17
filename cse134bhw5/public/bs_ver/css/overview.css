@@ -9,8 +9,20 @@
 }
 
 .nav-tabs >li > a:hover {
-	text-decoration: none;
 	color: #333;
+	cursor: pointer !important;
+	text-shadow: none !important;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #333 !important;
+  cursor: default !important;
+  background-color: #eee !important;
+  text-shadow: none !important;
+  /*border: 1px solid #ddd;
+  border-bottom-color: transparent;*/
 }
 
 .col-sm-6 article {
@@ -38,7 +50,7 @@
 }
 
 #feedback-form {
-	color: black;
+	color: #000;
 }
 
 #rightsidebar {
@@ -70,7 +82,7 @@ div.feedback-form-submit {
 	padding-bottom: 20px;
 	padding-left: 20px;
 	padding-right: 20px;
-	background-color: #ffffff;
+	background-color: #eee;
 	border-radius: 5px;
 	text-shadow: none;
 	text-align: left;
@@ -96,6 +108,7 @@ div.feedback-form-submit {
 
 #submit-feedback {
 	background-color: #B0C4DE;
+	border-color: #B0C4DE;
 }
 
 #submit-feedback:hover {
@@ -189,3 +202,6 @@ div.feedback-form-submit {
 	resize: vertical;
 }
 
+.img-responsive {
+	margin: 0 auto;
+}

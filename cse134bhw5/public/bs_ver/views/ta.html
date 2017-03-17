@@ -42,8 +42,8 @@
               <h3 class="masthead-brand"><a href="index.html">CheckMyClass</a></h3>
               <nav>
                 <ul class="nav masthead-nav">
-                  <li class="active"><a id="logout-btn" href="login_signup.html">Log Out</a></li>
-                  <li class="active"><a href="class_finder.html">Classes</a></li> 
+                  <li><a id="logout-btn" href="login_signup.html">Log Out</a></li>
+                  <li><a href="class_finder.html">Classes</a></li> 
                 </ul>
               </nav>
             </div>
@@ -57,7 +57,7 @@
                 <ul class="nav nav-tabs" style="list-style: none;">
                     <li><a href="overview.html">Overview</a></li>
                     <li><a href="professors.html">Professor</a></li>
-                    <li><a href="ta.html">TAs</a></li>
+                    <li class="active"><a href="ta.html">TAs</a></li>
                     <li><a href="feedback.html">Feedback</a></li>
                 </ul>
             </section>
@@ -78,7 +78,7 @@
       </div>
       <div class="col-sm-4" id="ta-edit-form-2">
   			<section id="rightsidebar">
-  				<img v-bind:src="ta_edits[3]['.value']" width= "300" height="300" alt="TA">
+  				<img class="img-responsive" v-bind:src="ta_edits[3]['.value']" width= "300" height="300" alt="TA">
   				<section id="contactinfo">
             <h3>Contact Info</h3>
   					John Doe <br>
