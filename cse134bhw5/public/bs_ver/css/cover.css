@@ -43,10 +43,10 @@ body {
   position: fixed;
   left: 0;
   right: 0;
-  background-image: url("../images/bg_img.jpg");
+  background-image: url("../images/IMG_4657.jpg");
   background-size: cover;
   height: 100%;
-  filter: blur(0px);
+  filter: blur(10px);
   z-index: 0;
 }
 
@@ -109,12 +109,14 @@ body {
  * Header
  */
 .masthead-brand {
+  display: none;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .masthead-nav > li {
   display: inline-block;
+
 }
 .masthead-nav > li + li {
   margin-left: 20px;
@@ -143,6 +145,7 @@ body {
 
 @media (min-width: 768px) {
   .masthead-brand {
+    display: block;
     float: left;
   }
   .masthead-nav {
@@ -164,9 +167,17 @@ body {
 }
 
 .content {
-  position: relative;
-  z-index: 9999;
+  position: static;
+  overflow: hidden;
+  z-index: 999;
 }
+
+@media (max-height: 660px) {
+  .content {
+    padding-top: 100px;
+  }
+}
+
 
 /*
  * Footer
