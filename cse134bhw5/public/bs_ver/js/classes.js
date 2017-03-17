@@ -30,6 +30,7 @@ window.addEventListener('load', function() {
 			},
 			Professor: {
 				edits: {
+					prof_name: "",
 					prof_image:"",
 					prof_email: "",
 					prof_hours: "",
@@ -43,6 +44,7 @@ window.addEventListener('load', function() {
 			},
 			TA: {
 				edits: {
+					ta_name: "",
 					ta_image:"",
 					ta_email: "",
 					ta_hours: "",
@@ -81,6 +83,7 @@ window.addEventListener('load', function() {
 					"Class_Rating": ""
 				}),
 				classRef.child(this.class_name).child('Professor').child('edits').set({
+					"Prof_Name": "",
 					"Prof_Image": "",
 					"Prof_Email": "",
 					"Prof_Hours": "",
@@ -92,6 +95,7 @@ window.addEventListener('load', function() {
 					"Professor_Rating": ""
 				}),
 				classRef.child(this.class_name).child('TA').child('edits').set({
+					"TA_Name": "",
 					"TA_Image": "",
 					"TA_Email": "",
 					"TA_Hours": "",

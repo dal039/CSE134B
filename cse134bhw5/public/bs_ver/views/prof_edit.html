@@ -12,7 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
@@ -36,6 +36,11 @@
             <label>Upload photo</label>
             <input type="file" id="img-upload" @change="onFileChange" v-model="prof_image" name="img-upload" accept="image/*" style="display: ;">
     		<br>
+            <div>
+                <label>Name</label>
+                <input class="form-control" type="text" v-model="prof_name" name="Name">
+            </div>
+            <br>
     		<div>
     			<label>Email</label>
     			<input class="form-control" type="text" v-model="prof_email" name="Email">

@@ -12,7 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
@@ -63,27 +63,29 @@
               </ul>
           </section>
       		<div class="col-sm-8 main"> 
-            <div class="main" id="prof-rating-form">
-        			<h1 id="className"></h1>
-           		<h2>Professor X</h2>
-              <a class="btn btn-default btn-rate pull-right" href="prof_rating.html">Rate</a>
-        			<h3 class="ratings">Grading Difficulty: {{prof_ratings[0]['.value']}}<br/>Helpfulness:  {{prof_ratings[1]['.value']}}<br/>Overall Rating:  {{prof_ratings[2]['.value']}}</h3>
-            	<a class="btn btn-default btn-edit pull-right" href="prof_edit.html">Edit</a>
-      			</div>
-            <br>
             <div id="prof-edit-form-1">
+              <h1 id="className"></h1>
+              <h2> {{prof_edits[4]['.value']}}</h2>
+              <a class="btn btn-default btn-edit pull-right" href="prof_edit.html">Edit</a>
               <article id="description">
                 <h2>Description</h2>
                 {{prof_edits[0]['.value']}}
               </article>
             </div>
+
+            <div class="main" id="prof-rating-form">
+              <a class="btn btn-default btn-rate pull-right" href="prof_rating.html">Rate</a>
+        			<h3 class="ratings">Grading Difficulty: {{prof_ratings[0]['.value']}}<br/>Helpfulness:  {{prof_ratings[1]['.value']}}<br/>Overall Rating:  {{prof_ratings[2]['.value']}}</h3>
+      			</div>
+            <br>
           </div>
           <div class="col-sm-4" id="prof-edit-form-2">
         		<section id="rightsidebar">
         			<img class="img-responsive" v-bind:src="prof_edits[3]['.value']" width= "300" height="300" onerror="">
         			<section id="contactinfo">
         				<h3>Contact Info</h3>
-        				Professor X <br>
+        				{{prof_edits[4]['.value']}} 
+                <br>
         				Email: {{prof_edits[1]['.value']}} <br>
         				Office Hours: {{prof_edits[2]['.value']}} <br>
         			</section>	
