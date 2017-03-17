@@ -61,7 +61,7 @@
 }
 
 .ratings {
-	margin-top: 5px;
+	margin-top: 20px;
 	line-height: 150%;
 }
 
@@ -172,6 +172,7 @@ div.feedback-form-submit {
 }
 
 .btn-rate {
+	float: right;
 	margin-right: 10%;
 	margin-top: 10px;
 }
@@ -252,5 +253,7 @@ div.feedback-form-submit {
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 
-
+.description-section {
+	margin-top: 20px;
+}
 
