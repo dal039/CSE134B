@@ -109,6 +109,7 @@ window.addEventListener('load', function() {
 	var ta_edit_vm = new Vue({
 		el: '#ta-edit-form-1',
 		data: {
+			ta_name:"",
 			ta_image:"",
 			ta_email: "",
 			ta_hours: "",
@@ -120,6 +121,7 @@ window.addEventListener('load', function() {
 		methods: {
 			editTA: function () {
 				taeditRef.update({
+					"TA_Name": this.ta_name,
 					"TA_Image": this.ta_image,
 					"TA_Email": this.ta_email,
 					"TA_Hours": this.ta_hours,
@@ -151,6 +153,7 @@ window.addEventListener('load', function() {
 	var ta_edit_vm = new Vue({
 		el: '#ta-edit-form-2',
 		data: {
+			ta_name: "",
 			ta_image:"",
 			ta_email: "",
 			ta_hours: "",
@@ -162,6 +165,7 @@ window.addEventListener('load', function() {
 		methods: {
 			editTA: function () {
 				taeditRef.update({
+					"TA_Name": this.ta_name,
 					"TA_Image": this.ta_image,
 					"TA_Email": this.ta_email,
 					"TA_Hours": this.ta_hours,
@@ -195,7 +199,8 @@ window.addEventListener('load', function() {
 	var prof_edit_vm = new Vue({
 		el: '#prof-edit-form-1',
 		data: {
-			prof_image:"",
+			prof_name: "",
+			prof_image: "",
 			prof_email: "",
 			prof_hours: "",
 			prof_description: ""
@@ -206,6 +211,7 @@ window.addEventListener('load', function() {
 		methods: {
 			editProf: function (event) {
 				profeditRef.update({
+					"Prof_Name": this.prof_name,
 					"Prof_Image": this.prof_image,
 					"Prof_Email": this.prof_email,
 					"Prof_Hours": this.prof_hours,
@@ -237,6 +243,7 @@ window.addEventListener('load', function() {
 	var prof_edit_vm = new Vue({
 		el: '#prof-edit-form-2',
 		data: {
+			prof_name: "",
 			prof_image:"",
 			prof_email: "",
 			prof_hours: "",
@@ -265,6 +272,7 @@ window.addEventListener('load', function() {
       		},
 			editProf: function (event) {
 				profeditRef.update({
+					"Prof_Name": this.prof_name,
 					"Prof_Image": this.prof_image,
 					"Prof_Email": this.prof_email,
 					"Prof_Hours": this.prof_hours,

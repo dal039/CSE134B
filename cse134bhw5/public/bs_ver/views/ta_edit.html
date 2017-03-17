@@ -38,6 +38,11 @@
         <input type="file" id="img-upload" @change="onFileChange" v-model="ta_image" name="img-upload" accept="image/*" style="display: ;">
         <br>
         <div>
+          <label>Name</label>
+          <input class="form-control" v-model="ta_name" type="text" name="Name">
+        </div>
+        <br>
+        <div>
           <label>Email</label>
           <input class="form-control" v-model="ta_email" type="text" name="Email">
         </div>

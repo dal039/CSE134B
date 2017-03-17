@@ -36,6 +36,11 @@
             <label>Upload photo</label>
             <input type="file" id="img-upload" @change="onFileChange" v-model="prof_image" name="img-upload" accept="image/*" style="display: ;">
     		<br>
+            <div>
+                <label>Name</label>
+                <input class="form-control" type="text" v-model="prof_name" name="Name">
+            </div>
+            <br>
     		<div>
     			<label>Email</label>
     			<input class="form-control" type="text" v-model="prof_email" name="Email">

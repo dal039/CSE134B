@@ -64,26 +64,28 @@
                 </ul>
             </section>
       <div class="col-sm-8 main">
-  			<main id="ta-rating-form">
-  				<h1 id="className"></h1>
-  				<h2>John Doe</h2>
-          <a class="btn btn-default btn-rate pull-right" href="ta_rating.html">Rate</a>
-    			<h3 class="ratings">Helpfulness: {{ta_ratings[0]['.value']}}<br/>Overall Rating:  {{ta_ratings[1]['.value']}}</h3>
-          <a class="btn btn-default btn-edit pull-right" href="ta_edit.html">Edit</a>			
-  			</main>
+        <h1 id="className"></h1>
         <div id="ta-edit-form-1">
+          <h2>{{ta_edits[4]['.value']}}</h2>
+          <a class="btn btn-default btn-edit pull-right" href="ta_edit.html">Edit</a>     
           <article id="description">
               <h2>Description</h2>
               {{ta_edits[0]['.value']}}
           </article>
         </div>
-      </div>
+
+  			<main id="ta-rating-form">
+          <a class="btn btn-default btn-rate pull-right" href="ta_rating.html">Rate</a>
+    			<h3 class="ratings">Helpfulness: {{ta_ratings[0]['.value']}}<br/>Overall Rating:  {{ta_ratings[1]['.value']}}</h3>
+  			</main>
+              </div>
       <div class="col-sm-4" id="ta-edit-form-2">
   			<section id="rightsidebar">
   				<img v-bind:src="ta_edits[3]['.value']" width= "300" height="300" alt="TA">
   				<section id="contactinfo">
             <h3>Contact Info</h3>
-  					John Doe <br>
+  					{{ta_edits[4]['.value']}}
+            <br>
   					Email:  {{ta_edits[1]['.value']}}<br>
   					Office Hours: {{ta_edits[2]['.value']}}
   				</section>	
