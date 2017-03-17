@@ -5,15 +5,15 @@ var db = app.database();
 // Initialize storage space
 var storage = app.storage();
 
-var database = "CSE 123 - CheckMyClass";
+var database = sessionStorage.getItem('classname');
 
 var TA = "TA";
 var Prof = "Professor";
 var Class = "Class";
 
-var taeditRef = db.ref('/' + database + '/' + TA + '/edits');
-var profeditRef = db.ref('/' + database + '/' + Prof + '/edits');
-var classeditRef = db.ref('/' + database + '/' + Class + '/edits');
+var taeditRef = db.ref('/Classes/' + database + '/' + TA + '/edits');
+var profeditRef = db.ref('/Classes/' + database + '/' + Prof + '/edits');
+var classeditRef = db.ref('/Classes/' + database + '/' + Class + '/edits');
 
 var filename;
 var filepath;
