@@ -26,6 +26,8 @@
     <script src="../js/app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../js/authenticate.js"></script> 
+    <script src="../js/classes.js"></script>
+    <script src="../js/classname.js"></script>
   </head>
 
   <body>
@@ -51,6 +53,9 @@
         <div class="content-block">
         <div class="container">
           <h1 class="cover-heading">Search for a class or pick one from below</h1>
+          <div>
+            <input type="button" onclick="location.href='./add_class.html';" value="Add Class" />
+          </div>
           <div class="row filters">
             <div class="col-xs-2">
               <select class="form-control">
@@ -71,8 +76,16 @@
               <input class="form-control" type="text" name="search" placeholder="e.g. CSE134B">
             </div>
           </div>
-          <div class="wrap">
+          <div class="wrap" id="class-form">
             <div class="row courses">
+              <div class="col-xs-4 col-lg-4 course-item" v-for="classBox in classes" >
+                <a class="courseBox" href="overview.html">
+                  <p class="course-label">{{classBox.Class_Info.Class_Name}}</p>
+                  <p class="course-text">{{classBox.Class_Info.Class_Quarter}} - {{classBox.Class_Info.Class_Division}}</p>
+                </a>
+                <button class="course-text btn btn-danger" @click="removeClass(classBox['.key'])">Remove</button>
+              </div>  
+              <!--
               <div class="col-xs-4 col-lg-4 course-item">
                 <a class="courseBox" href="overview.html">
                   <p class="course-label">CSE 100</p>
@@ -133,6 +146,7 @@
                   <p class="course-text">Lorem ipsum dolor sit amet.</p>
                 </a>
               </div>
+              -->
             </div>
           </div>
         </div>
