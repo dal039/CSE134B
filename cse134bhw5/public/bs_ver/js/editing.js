@@ -120,13 +120,31 @@ window.addEventListener('load', function() {
 		}, 
 		methods: {
 			editTA: function () {
-				taeditRef.update({
-					"TA_Name": this.ta_name,
-					"TA_Image": this.ta_image,
-					"TA_Email": this.ta_email,
-					"TA_Hours": this.ta_hours,
-					"TA_Description": this.ta_description
-				})
+				if(this.ta_name.trim()){
+					taeditRef.update({
+						"TA_Name": this.ta_name
+					})
+				}
+				if(this.ta_image.trim()){
+					taeditRef.update({
+						"TA_Image": this.ta_image
+					})
+				}
+				if(this.ta_email.trim()){
+					taeditRef.update({
+						"TA_Email": this.ta_email
+					})
+				}
+				if(this.ta_hours.trim()){
+					taeditRef.update({
+						"TA_Hours": this.ta_hours
+					})
+				}
+				if(this.ta_description.trim()){
+					taeditRef.update({
+						"TA_Description": this.ta_description
+					})
+				}
 			},
 			onFileChange(e) {
       			var files = e.target.files || e.dataTransfer.files;
@@ -164,13 +182,31 @@ window.addEventListener('load', function() {
 		}, 
 		methods: {
 			editTA: function () {
-				taeditRef.update({
-					"TA_Name": this.ta_name,
-					"TA_Image": this.ta_image,
-					"TA_Email": this.ta_email,
-					"TA_Hours": this.ta_hours,
-					"TA_Description": this.ta_description
-				})
+				if(this.ta_name.trim()){
+					taeditRef.update({
+						"TA_Name": this.ta_name
+					})
+				}
+				if(this.ta_image.trim()){
+					taeditRef.update({
+						"TA_Image": this.ta_image
+					})
+				}
+				if(this.ta_email.trim()){
+					taeditRef.update({
+						"TA_Email": this.ta_email
+					})
+				}
+				if(this.ta_hours.trim()){
+					taeditRef.update({
+						"TA_Hours": this.ta_hours
+					})
+				}
+				if(this.ta_description.trim()){
+					taeditRef.update({
+						"TA_Description": this.ta_description
+					})
+				}
 			},
 			onFileChange(e) {
       			var files = e.target.files || e.dataTransfer.files;
@@ -210,13 +246,31 @@ window.addEventListener('load', function() {
 		}, 
 		methods: {
 			editProf: function (event) {
-				profeditRef.update({
-					"Prof_Name": this.prof_name,
-					"Prof_Image": this.prof_image,
-					"Prof_Email": this.prof_email,
-					"Prof_Hours": this.prof_hours,
-					"Prof_Description": this.prof_description
-				});
+				if(this.prof_name.trim()){
+					profeditRef.update({
+						"Prof_Name": this.prof_name
+					})
+				}
+				if(this.prof_image.trim()){
+					profeditRef.update({
+						"Prof_Image": this.prof_image
+					})
+				}
+				if(this.prof_email.trim()){
+					profeditRef.update({
+						"Prof_Email": this.prof_email
+					})
+				}
+				if(this.prof_hours.trim()){
+					profeditRef.update({
+						"Prof_Hours": this.prof_hours
+					})
+				}
+				if(this.prof_description.trim()){
+					profeditRef.update({
+						"Prof_Description": this.prof_description
+					})
+				}
 			},
 			onFileChange(e) {
       			var files = e.target.files || e.dataTransfer.files;
@@ -271,15 +325,32 @@ window.addEventListener('load', function() {
       			reader.readAsDataURL(file);
       		},
 			editProf: function (event) {
-				profeditRef.update({
-					"Prof_Name": this.prof_name,
-					"Prof_Image": this.prof_image,
-					"Prof_Email": this.prof_email,
-					"Prof_Hours": this.prof_hours,
-					"Prof_Description": this.prof_description
-				})
-			}
-			
+				if(this.prof_name.trim()){
+					profeditRef.update({
+						"Prof_Name": this.prof_name
+					})
+				}
+				if(this.prof_image.trim()){
+					profeditRef.update({
+						"Prof_Image": this.prof_image
+					})
+				}
+				if(this.prof_email.trim()){
+					profeditRef.update({
+						"Prof_Email": this.prof_email
+					})
+				}
+				if(this.prof_hours.trim()){
+					profeditRef.update({
+						"Prof_Hours": this.prof_hours
+					})
+				}
+				if(this.prof_description.trim()){
+					profeditRef.update({
+						"Prof_Description": this.prof_description
+					})
+				}
+			}			
 		}
 	})
   };
@@ -297,11 +368,21 @@ window.addEventListener('load', function() {
 		}, 
 		methods: {
 			editClass: function () {
-				classeditRef.update({
-					"Class_Location": this.location,
-					"Class_Description": this.description,
-					"Class_Offering": this.offering
-				})
+				if(this.location.trim()){
+					classeditRef.update({
+						"Class_Location": this.location
+					})
+				}
+				if(this.description.trim()){
+					classeditRef.update({
+						"Class_Description": this.description
+					})
+				}
+				if(this.offering.trim()){
+					classeditRef.update({
+						"Class_Offering": this.offering
+					})
+				}
 			}
 		}
 	})

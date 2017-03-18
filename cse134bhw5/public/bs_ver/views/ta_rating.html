@@ -34,12 +34,12 @@
         <br>
         <div>
           <label>Helpfulness (out of 10)</label>
-          <input class="form-control help" v-model="ta_helpfulness" type="number" min="0" max="10" name="Helpfulness">
+          <input class="form-control help" v-model="ta_helpfulness" type="number" min="0" max="10" name="Helpfulness" required>
         </div>
         <br>
         <div>
           <label>Overall Rating (out of 10)</label>
-          <input class="form-control rating" v-model="ta_rating" type="number" min="0" max="10" name="Rating">
+          <input class="form-control rating" v-model="ta_rating" type="number" min="0" max="10" name="Rating" required>
         </div>
         <br>
         <button type="cancel" class="btn btn-default btn-cancel pull-left" formaction="./ta.html">Cancel</button>
