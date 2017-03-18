@@ -63,20 +63,20 @@
                 </ul>
             </section>
       <div class="col-sm-8 main">
-        <h1 id="className"></h1>
         <div id="ta-edit-form-1">
+          <h1 id="className"></h1>
           <h2>{{ta_edits[4]['.value']}}</h2>
           <a class="btn btn-default btn-edit pull-right" href="ta_edit.html">Edit</a>     
           <article id="description">
-              <h2>Description</h2>
+              <h2 class="description-section">Description</h2>
               {{ta_edits[0]['.value']}}
           </article>
         </div>
 
-  			<main id="ta-rating-form">
-          <a class="btn btn-default btn-rate pull-right" href="ta_rating.html">Rate</a>
+  			<div id="ta-rating-form">
+          <a class="btn btn-default btn-rate" href="ta_rating.html">Rate</a>
     			<h3 class="ratings">Helpfulness: {{ta_ratings[0]['.value']}}<br/>Overall Rating:  {{ta_ratings[1]['.value']}}</h3>
-  			</main>
+  			</div>
               </div>
       <div class="col-sm-4" id="ta-edit-form-2">
   			<section id="rightsidebar">
