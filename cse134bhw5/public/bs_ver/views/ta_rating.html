@@ -11,19 +11,16 @@
     <title>TA Rate - CheckMyClass</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../minified-css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- Custom styles for this template -->
-    <link href="../css/overview.css" rel="stylesheet">
-    <link href="../css/cover-1.css" rel="stylesheet">
+    <link href="../minified-css/main.min.css" rel="stylesheet">
     <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
-    <script src="../js/app.js"></script>
     <script src="https://unpkg.com/vue"></script>
     <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../js/authenticate.js"></script> 
-    <script src="../js/ratings.js"></script> 
+    <script src="../minified-js/rate.min.js"></script>
   </head>
 
   <body>
@@ -42,7 +39,7 @@
           <input class="form-control rating" v-model="ta_rating" type="number" min="0" max="10" name="Rating" required>
         </div>
         <br>
-        <button type="cancel" formnovalidation class="btn btn-default btn-cancel pull-left" formaction="./ta.html">Cancel</button>
+        <button type="cancel" formnovalidate class="btn btn-default btn-cancel pull-left" formaction="./ta.html">Cancel</button>
         <button type="submit" class="btn btn-default btn-submit pull-right"  formaction="./ta.html">Submit</button>
       </form> 
     </div>
