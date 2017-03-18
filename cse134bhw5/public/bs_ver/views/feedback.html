@@ -78,7 +78,7 @@
     				</div>	
     		  
             <div class="feedback-form-submit">	
-        			<form id="feedback-form feedback-form-submit" @submit="addFeedback">
+        			<form id="feedback-form feedback-form-submit" @submit.prevent="addFeedback">
                 <div class="form-inline name-rating">
                   <label class="label-form" for="username">Name: </label>
                   <input class="form-control" type="text" id="usrname" v-model="usrname" name="username" required> &nbsp; &nbsp;

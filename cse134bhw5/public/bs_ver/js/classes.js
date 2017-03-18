@@ -114,9 +114,6 @@ window.addEventListener('load', function() {
 				taRatings.set({
 					"TA_Helpfulness": "",
 					"TA_Rating": ""
-				}),
-				classRef.child(this.class_name).child('Gifs').push().set({
-					"gif_url": ""
 				})
 			},
 			removeClass: function(key) {

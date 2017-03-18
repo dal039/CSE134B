@@ -39,7 +39,7 @@ window.addEventListener('load', function() {
 		  feedbackList: ref
 		}, 
 		methods: {
-			addFeedback: function () {
+			addFeedback: function (e) {
 				ref.push({
 					"name": this.usrname,
 					"rating": this.rating,

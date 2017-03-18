@@ -24,6 +24,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../js/app.js"></script>
     <script src="../js/authenticate.js"></script>
+    <script src="../js/gifs.js"></script>
     <script src="../js/file_watch.js"></script>
     <script src="../js/title.js"></script>
 
@@ -68,20 +69,22 @@
             <h2 style="margin-bottom: 20px">Wall of GIFS</h2>
             <h4 class="wall-gif-description">Submit a gif based on how you feel about this course</h4>
             <div class="input-group-center">
+            <form @submit.prevent="addGif">
               <div class="input-group">
                 <label class="input-group-btn">
                   <span class="btn btn-default btn-file">
-                    Browse <input type="file" style="display: none;" multiple>
+                    Browse <input type="file" id="img-upload" @change="onFileChange" name="img-upload" style="display: ;">
                   </span>
                 </label>
                 <input type="text" class="form-control" readonly>
               </div>
+              <input id="submit" class="btn btn-default btn-submit" type="submit" value="Submit">
+            </form>
             </div>
             <div class="wall-div">
               <div class="col-sm-3 gif-box" v-for="gif in gifs">
-                <img class="img-gif" src="">
-                <button class="btn btn-default btn-submit pull-left">Update</button>
-                <button class="btn btn-danger pull-right" @click="removeFeedback(feedback['.key'])">Remove</button>
+                <img class="img-gif" :src="gif.gif_url">
+                <button class="btn btn-danger" @click="removeGif(gif['.key'])">Remove</button>
               </div>
             </div>
 
