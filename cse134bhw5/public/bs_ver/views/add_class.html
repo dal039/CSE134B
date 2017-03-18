@@ -36,12 +36,12 @@
         <br>
         <div>
           <label>Name</label>
-          <input class="form-control" v-model="class_name" type="text" name="Name">
+          <input class="form-control" v-model="class_name" type="text" name="Name" required>
         </div>
         <br>
         <div>
           <label>Quarter</label>
-          <select class="form-control" v-model="class_quarter" name="Quarter">
+          <select class="form-control" v-model="class_quarter" name="Quarter" required>
             <option value="FA15">FA15</option>
             <option value="WI16">WI16</option>
             <option value="SP16">SP16</option>
@@ -53,11 +53,11 @@
         <br>
         <div>
           <label>Division</label>
-          <input type="radio" id="LD" value="LD" v-model="class_division">
+          <input type="radio" id="LD" value="LD" v-model="class_division" name="division" required/>
           <label for="LD">LD</label>
-          <input type="radio" id="UD" value="UD" v-model="class_division">
+          <input type="radio" id="UD" value="UD" v-model="class_division" name="division" required/>
           <label for="UD">UD</label>
-          <input type="radio" id="GD" value="GD" v-model="class_division">
+          <input type="radio" id="GD" value="GD" v-model="class_division" name="division" required/>
           <label for="GD">GD</label>
         </div>
         <br>

@@ -69,42 +69,49 @@ window.addEventListener('load', function() {
 		  classes: classRef
 		}, 
 		methods: {
-			addClass: function () {
-				classRef.child(this.class_name).child('Class_Info').set({
+			addClass: function (e) {
+				var classInfo = classRef.child(this.class_name).child('Class_Info');
+				var classEdits = classRef.child(this.class_name).child('Class').child('edits');
+				var classRatings = classRef.child(this.class_name).child('Class').child('ratings');
+				var profEdits = classRef.child(this.class_name).child('Professor').child('edits');
+				var profRatings = classRef.child(this.class_name).child('Professor').child('ratings');
+				var taEdits = classRef.child(this.class_name).child('TA').child('edits');
+				var taRatings = classRef.child(this.class_name).child('TA').child('ratings');
+				classInfo.set({
 					"Class_Name": this.class_name,
 					"Class_Quarter": this.class_quarter,
 					"Class_Division": this.class_division
-				}),
-				classRef.child(this.class_name).child('Class').child('edits').set({
+				})
+				classEdits.set({
 					"Class_Location": "",
 					"Class_Description": "",
 					"Class_Offering": ""
 				}),
-				classRef.child(this.class_name).child('Class').child('ratings').set({
+				classRatings.set({
 					"Class_Difficulty": "",
 					"Class_Usefulness": "",
 					"Class_Rating": ""
 				}),
-				classRef.child(this.class_name).child('Professor').child('edits').set({
+				profEdits.set({
 					"Prof_Name": "",
 					"Prof_Image": "",
 					"Prof_Email": "",
 					"Prof_Hours": "",
 					"Prof_Description": ""
 				}),
-				classRef.child(this.class_name).child('Professor').child('ratings').set({
+				profRatings.set({
 					"Professor_Difficulty": "",
 					"Professor_Helpfulness": "",
 					"Professor_Rating": ""
 				}),
-				classRef.child(this.class_name).child('TA').child('edits').set({
+				taEdits.set({
 					"TA_Name": "",
 					"TA_Image": "",
 					"TA_Email": "",
 					"TA_Hours": "",
 					"TA_Description": ""
 				}),
-				classRef.child(this.class_name).child('TA').child('ratings').set({
+				taRatings.set({
 					"TA_Helpfulness": "",
 					"TA_Rating": ""
 				}),
