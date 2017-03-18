@@ -59,6 +59,9 @@ window.addEventListener('load', function() {
 				usrname: "",
 				rating: "",
 				comment: ""
+			},
+			Gifs:{
+				gif_url: ""
 			}
 
 		},
@@ -104,6 +107,9 @@ window.addEventListener('load', function() {
 				classRef.child(this.class_name).child('TA').child('ratings').set({
 					"TA_Helpfulness": "",
 					"TA_Rating": ""
+				}),
+				classRef.child(this.class_name).child('Gifs').push().set({
+					"gif_url": ""
 				})
 			},
 			removeClass: function(key) {

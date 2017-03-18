@@ -29,7 +29,7 @@
 
   </head>
 
-<body>
+  <body>
     <div class="site-wrapper">
 
       <div class="site-wrapper-inner">
@@ -58,44 +58,45 @@
                     <li class="hvr-bounce-to-top"><a href="professors.html">Professor</a></li>
                     <li class="hvr-bounce-to-top"><a href="ta.html">TAs</a></li>
                     <li class="active"><a href="feedback.html">Feedback</a></li>
+                    <li class="hvr-bounce-to-top"><a href="wall_gifs.html">Wall of Gifs</a></li>
                 </ul>
             </section>
 
-			<main id="feed">
-				<h1 id="className"></h1>
-				<h2 style="margin-bottom: 20px">Feedback</h2>
-				<div class="feedback-entry" v-for="feedback in feedbackList" >
-					<div class="feedback-user">
-						<h3 id="nameFb" class="ratings">{{feedback.name}}</h3>
-            <h4 class="ratings" style="float: right; margin-right: 50px;"> Rating: {{feedback.rating}}</h4>
-					</div>
-					<article class="feedback-text" id="description">
-						<p style="overflow: auto;">{{feedback.comment}}</p>
-					</article>
+    			<main id="feed">
+    				<h1 id="className"></h1>
+    				<h2 style="margin-bottom: 20px">Feedback</h2>
+    				<div class="feedback-entry" v-for="feedback in feedbackList" >
+    					<div class="feedback-user">
+    						<h3 id="nameFb" class="ratings">{{feedback.name}}</h3>
+                <h4 class="ratings" style="float: right; margin-right: 50px;"> Rating: {{feedback.rating}}</h4>
+    					</div>
+    					<article class="feedback-text" id="description">
+    						<p style="overflow: auto;">{{feedback.comment}}</p>
+    					</article>
 
-          <button class="btn btn-danger" @click="removeFeedback(feedback['.key'])">Remove</button>
-				</div>	
-		  
-        <div class="feedback-form-submit">	
-    			<form id="feedback-form feedback-form-submit" @submit="addFeedback">
-            <div class="form-inline name-rating">
-              <label class="label-form" for="username">Name: </label>
-              <input class="form-control" type="text" id="usrname" v-model="usrname" name="username" required> &nbsp; &nbsp;
-              <label class="label-form" for="Rating">Rating: </label>
-              <input class="form-control" type="number" id="rating" v-model="rating" min="0" max="10" name="Rating" required>
+              <button class="btn btn-danger" @click="removeFeedback(feedback['.key'])">Remove</button>
+    				</div>	
+    		  
+            <div class="feedback-form-submit">	
+        			<form id="feedback-form feedback-form-submit" @submit="addFeedback">
+                <div class="form-inline name-rating">
+                  <label class="label-form" for="username">Name: </label>
+                  <input class="form-control" type="text" id="usrname" v-model="usrname" name="username" required> &nbsp; &nbsp;
+                  <label class="label-form" for="Rating">Rating: </label>
+                  <input class="form-control" type="number" id="rating" v-model="rating" min="0" max="10" name="Rating" required>
+                </div>
+        				<textarea class="form-control feedback-textarea" v-model="comment" id="feedback" placeholder="Input feedback here..." required>
+        				</textarea>
+        				<br>
+        				<input id="submit-feedback" class="btn btn-default btn-submit" type="submit" value="Submit">
+        			</form>
             </div>
-    				<textarea class="form-control feedback-textarea" v-model="comment" id="feedback" placeholder="Input feedback here..." required>
-    				</textarea>
-    				<br>
-    				<input id="submit-feedback" class="btn btn-default btn-submit" type="submit" value="Submit">
-    			</form>
-        </div>
-      </main>
+          </main>
 
-		</div>
+    		</div>
+      </div>
     </div>
-  </div>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>

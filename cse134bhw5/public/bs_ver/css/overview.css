@@ -157,13 +157,50 @@ div.feedback-form-submit {
 }
 
 .btn-file {
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    border-color: #555;
+    background-color: #555;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+/*
+.btn-file {
 	margin-bottom: 10px;
 }
+
+
+.btn-file input {
+	display: none;
+}
+*/
+
+
 
 .btn-file:hover,
 .btn-submit:hover {
 	background-color: #d3d3d3 !important;
 	border-color: #d3d3d3 !important;
+}
+
+.input-group-btn > .btn-file:hover {
+	color: #fff !important;
+	background-color: #444 !important;
+	border-color: #444 !important;
 }
 
 .btn-cancel:hover {
@@ -256,4 +293,24 @@ div.feedback-form-submit {
 .description-section {
 	margin-top: 20px;
 }
+
+.input-group-center {
+	width: 500px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.gif-box {
+	width: 230px;
+	margin: auto;
+}
+
+.img-gif {
+	width: 200px;
+	height: 200px;
+	border-radius: 3px;
+}
+
+
 

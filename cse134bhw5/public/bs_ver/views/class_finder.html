@@ -28,6 +28,7 @@
     <script src="../js/authenticate.js"></script> 
     <script src="../js/classes.js"></script>
     <script src="../js/classname.js"></script>
+    <script src="../js/filter.js"></script>
   </head>
 
   <body>
@@ -55,7 +56,8 @@
           <h1 class="cover-heading">Search for a class or pick one from below</h1>
           <div class="row filters">
             <div class="col-xs-2">
-              <select class="form-control">
+              <select id="quarter-sel" class="form-control">
+                <option value="NULL">All</option>
                 <option value="fa15">FA15</option>
                 <option value="wi16">WI16</option>
                 <option value="sp16">SP16</option>
@@ -64,13 +66,23 @@
                 <option value="sp17">SP17</option>
               </select>
             </div>
+            <div class="col-xs-2">
+              <select id="division-sel" class="form-control">
+                <option value="NULL">All</option>
+                <option value="LD">LD</option>
+                <option value="UD">UD</option>
+                <option value="GD">GD</option>
+              </select>
+            </div>
+            <div class="col-xs-4"></div>
+            <!--
             <div class="col-xs-6 checkbox-div">
               <label class="checkbox-inline"><input type="checkbox" name="lowerdiv">LD</label>
               <label class="checkbox-inline"><input type="checkbox" name="upperdiv">UD</label>
               <label class="checkbox-inline"><input type="checkbox" name="graduate">GD</label>
-            </div>
+            </div>-->
             <div class="col-xs-4">
-              <input class="form-control" type="text" name="search" placeholder="e.g. CSE134B">
+              <input class="form-control class-search" type="text" name="search" placeholder="e.g. CSE134B">
             </div>
           </div>
           <div class="wrap" id="class-form">
@@ -85,68 +97,6 @@
                 </a>
                 <button class="course-text btn btn-danger" @click="removeClass(classBox['.key'])">Remove</button>
               </div>  
-              <!--
-              <div class="col-xs-4 col-lg-4 course-item">
-                <a class="courseBox" href="overview.html">
-                  <p class="course-label">CSE 100</p>
-                  <p class="course-text">Lorem ipsum dolor sit amet.</p>
-                </a>
-              </div>
-              <div class="col-xs-4 col-lg-4 course-item">
-                <a class="courseBox" href="overview.html">
-                  <p class="course-label">CSE 101</p>
-                  <p class="course-text">Lorem ipsum dolor sit amet.</p>
-                </a>
-              </div>
-              <div class="col-xs-4 col-lg-4 course-item">
-                <a class="courseBox" href="overview.html">
-                  <p class="course-label">CSE 102</p>
-                  <p class="course-text">Lorem ipsum dolor sit amet.</p>
-                </a>
-              </div>
-              <div class="col-xs-4 col-lg-4 course-item">
-                <a class="courseBox" href="overview.html">
-                  <p class="course-label">CSE 103</p>
-                  <p class="course-text">Lorem ipsum dolor sit amet.</p>
-                </a>
-              </div>
-              <div class="col-xs-4 col-lg-4 course-item">
-                <a class="courseBox" href="overview.html">
-                  <p class="course-label">CSE 105</p>
-                  <p class="course-text">Lorem ipsum dolor sit amet.</p>
-                </a>
-              </div>
-              <div class="col-xs-4 col-lg-4 course-item">
-                <a class="courseBox" href="overview.html">
-                  <p class="course-label">CSE 107</p>
-                  <p class="course-text">Lorem ipsum dolor sit amet.</p>
-                </a>
-              </div>
-              <div class="col-xs-4 col-lg-4 course-item">
-                <a class="courseBox" href="overview.html">
-                  <p class="course-label">CSE 110</p>
-                  <p class="course-text">Lorem ipsum dolor sit amet.</p>
-                </a>
-              </div>
-              <div class="col-xs-4 col-lg-4 course-item">
-                <a class="courseBox" href="overview.html">
-                  <p class="course-label">CSE 111</p>
-                  <p class="course-text">Lorem ipsum dolor sit amet.</p>
-                </a>
-              </div>
-              <div class="col-xs-4 col-lg-4 course-item">
-                <a class="courseBox" href="overview.html">
-                  <p class="course-label">CSE 112</p>
-                  <p class="course-text">Lorem ipsum dolor sit amet.</p>
-                </a>
-              </div>
-              <div class="col-xs-4 col-lg-4 course-item">
-                <a class="courseBox" href="overview.html">
-                  <p class="course-label">CSE 123</p>
-                  <p class="course-text">Lorem ipsum dolor sit amet.</p>
-                </a>
-              </div>
-              -->
             </div>
           </div>
         </div>
