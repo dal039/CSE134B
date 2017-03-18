@@ -25,7 +25,6 @@ window.addEventListener('load', function() {
 		}, 
 		methods: {
 			addGif: function () {
-				console.log(this.gif_url)
 				gifsRef.push({
 					"gif_url": this.gif_url
 				})

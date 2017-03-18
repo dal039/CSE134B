@@ -34,30 +34,31 @@
     <div class="box center" id="ta-edit-form-1">
       <form id="upload-data" @submit="editTA">
         <h3 class="box-label">Edit TA Description</h3>
-        <label> Upload Photo</label>
-        <input type="file" id="img-upload" @change="onFileChange" v-model="ta_image" name="img-upload" accept="image/*" style="display: ;">
+        <span class="btn btn-default btn-file">
+                Upload Photo <input type="file" id="img-upload" @change="onFileChange" name="img-upload" style="display: ;" required>
+        </span>
         <br>
         <div>
           <label>Name</label>
-          <input class="form-control" v-model="ta_name" type="text" name="Name">
+          <input class="form-control" v-model="ta_name" type="text" name="Name" required>
         </div>
         <br>
         <div>
           <label>Email</label>
-          <input class="form-control" v-model="ta_email" type="text" name="Email">
+          <input class="form-control" v-model="ta_email" type="text" name="Email" required>
         </div>
         <br>
         <div>
           <label>Office Hours</label>
-          <input class="form-control" v-model="ta_hours" type="text" name="Hours">
+          <input class="form-control" v-model="ta_hours" type="text" name="Hours" required>
         </div>
         <br>
         <div>
           <label>Description</label>
-          <textarea class="form-control" rows="10" cols="50" v-model="ta_description" name="Description" placeholder="Edit Here"></textarea>
+          <textarea class="form-control" rows="10" cols="50" v-model="ta_description" name="Description" placeholder="Edit Here" required></textarea>
         </div>
         <br>
-        <button type="cancel" class="btn btn-default btn-cancel pull-left" formaction="ta.html">Cancel</button>
+        <button type="cancel" formnovalidation class="btn btn-default btn-cancel pull-left" formaction="ta.html">Cancel</button>
         <button type="submit" class="btn btn-default btn-submit pull-right" formaction="ta.html">Submit</button>
       </form> 
     </div>
