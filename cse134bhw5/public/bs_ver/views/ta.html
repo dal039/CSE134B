@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title></title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Bootstrap core CSS -->
+    <link href="../minified-css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../minified-css/main.min.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../minified-js/overview.min.js"></script>
+  </head>
+
+<body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+        <div class="nav-wrap">
+        <div class="cover-container">
+          <div class="masthead clearfix">
+          <div class="nav-container">
+            <div class="inner">
+              <h3 class="masthead-brand"><a href="index.html">CheckMyClass</a></h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li><a id="logout-btn" href="login_signup.html">Log Out</a></li>
+                  <li><a href="class_finder.html">Classes</a></li> 
+                </ul>
+              </nav>
+            </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="container">
+            <section id="leftsidebar">
+                <ul class="nav nav-tabs" style="list-style: none;">
+                    <li class="hvr-bounce-to-top"><a href="overview.html">Overview</a></li>
+                    <li class="hvr-bounce-to-top"><a href="professors.html">Professor</a></li>
+                    <li class="active"><a href="ta.html">TAs</a></li>
+                    <li class="hvr-bounce-to-top"><a href="feedback.html">Feedback</a></li>
+                    <li class="hvr-bounce-to-top"><a href="wall_gifs.html">Wall of Gifs</a></li>
+                </ul>
+            </section>
+      <div class="col-sm-8 main">
+        <div id="ta-edit-form-1">
+          <h1 id="className"></h1>
+          <h2>{{ta_edits[4]['.value']}}</h2>
+          <a class="btn btn-default btn-edit pull-right" href="ta_edit.html">Edit</a>     
+          <article id="description">
+              <h2 class="description-section">Description</h2>
+              {{ta_edits[0]['.value']}}
+          </article>
+        </div>
+
+  			<div id="ta-rating-form">
+          <a class="btn btn-default btn-rate" href="ta_rating.html">Rate</a>
+    			<h3 class="ratings">Helpfulness: {{ta_ratings[0]['.value']}}<br/>Overall Rating:  {{ta_ratings[1]['.value']}}</h3>
+  			</div>
+      </div>
+      <div class="col-sm-4" id="ta-edit-form-2">
+  			<section id="rightsidebar">
+  				<img class="img-responsive" v-bind:src="ta_edits[3]['.value']" width= "300" height="300" alt="TA image">
+  				<section id="contactinfo">
+            <h3>Contact Info</h3>
+  					{{ta_edits[4]['.value']}}
+            <br>
+  					Email:  {{ta_edits[1]['.value']}}<br>
+  					Office Hours: {{ta_edits[2]['.value']}}
+  				</section>	
+
+  			</section>
+      </div>
+		</div>
+	</div>
+  </div>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

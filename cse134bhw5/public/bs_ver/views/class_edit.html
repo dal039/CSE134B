@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Class Edit - CheckMyClass</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../minified-css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Custom styles for this template -->
+    <link href="../minified-css/main.min.css" rel="stylesheet"></link>
+    <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../minified-js/edit.min.js"></script>
+  </head>
+
+  <body>
+    <div id="database" >CSE 123 - CheckMyClass</div>
+    <div class= "box center" id="class-edit-form">
+      <form @submit="editClass">
+        <h3 class="box-label">Edit Class Description</h3>
+        <div class="form-group">
+          <label>Location</label>
+          <input type="text" class="form-control" id="location" v-model="location" placeholder="Location" required>
+        </div>
+        <div class="form-group">
+          <label>Description</label>
+          <textarea class="form-control" id="description" v-model="description" rows="10" cols="50" name="Description" placeholder="Edit Here" required></textarea>
+        </div>
+        <div class="checkbox form-group">
+          <label>Offered next quarter?
+            <select class="form-control" id="offering" v-model="offering" required>
+              <option value="Yes">Yes</option>
+              <option value="No" selected>No</option>
+            </select>
+          </label>
+        </div>
+        <a class="btn btn-default btn-cancel pull-left" formnovalidate href="overview.html">Cancel</a>
+        <button type="submit" class="btn btn-default btn-submit pull-right" formaction="overview.html">Submit</button>
+      </form>
+
+    </div>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>

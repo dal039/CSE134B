@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CSE 123 - CheckMyClass</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/overview.css" rel="stylesheet">
+    <link href="./css/cover-1.css" rel="stylesheet">
+  </head>
+
+
+  <body>
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+        <div class="nav-wrap">
+        <div class="cover-container">
+          <div class="masthead clearfix">
+          <div class="nav-container">
+            <div class="inner">
+              <h3 class="masthead-brand"><a href="index.html">CheckMyClass</a></h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="login_signup.html">Log Out</a></li>
+                  <li class="active"><a href="class_finder.html">Classes</a></li> 
+                </ul>
+              </nav>
+            </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="container">
+            <section id="leftsidebar">
+                <ul class="nav nav-tabs" style="list-style: none;">
+                    <li><a href="overview.html">Overview</a></li>
+                    <li><a href="professors.html">Professor</a></li>
+                    <li><a href="ta.html">TAs</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </section>
+
+            <div class="content-block">
+                <div class="col-sm-6">
+                    <div class="header-overview">
+                    <form>
+                        <button class="btn btn-default pull-right btn-edit" formaction="class_edit.html">Edit</button>
+                    </form>
+                    <h1>CSE 123</h1>
+                    </div>
+                    <article>
+                        Web programming is by far one of the most difficult forms of programming facing today's computing professionals.
+                        While there are many Web developers, few are truly skilled in the field.
+                        A primary reason for this is the sheer number of technologies required to masterfully build a modern Web application.
+                        Add to this challenge a common lack of understanding of the delivery, security and even medium of the Web. 
+                    </article>
+
+                    <form>
+                        <button class="btn btn-default pull-right btn-rate" formaction="class_rating.html">Rate</button>
+                    </form>
+                    <h3 class="ratings">Difficulty: Medium <br> Usefulness: 9.5 <br> Overall Ratng: 9.3 </h3>  
+                    <h3 class="ratings">Location: CENTER 112 <br> Offered next quarter?: Yes </h3>  
+                </div>
+
+                <div class="col-sm-6">
+                    <div id="graph">
+                      <img class="img-responsive" src="./ChartGo.png" alt="ChartGo" height="450" width="450">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Professor Rate - CheckMyClass</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../minified-css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Custom styles for this template -->
+    <link href="../minified-css/main.min.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../minified-js/rate.min.js"></script>
+  </head>
+
+  <body>
+    <div class="box center" id = "prof-rating-form">
+      <form @submit="rateProf">
+        <h3 class="box-label">Rate Professor</h3>
+        <div>
+          <label>Grading Difficulty</label>
+          <select class="form-control difficulty" v-model="prof_difficulty" name="Difficulty" required>
+            <option value="Easy">Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>
+          </select>
+        </div>
+        <br>
+        <div>
+          <label>Helpfulness (out of 10)</label>
+          <input class="form-control help" v-model="prof_helpfulness" type="number" min="0" max="10" name="Helpfulness" required>
+        </div>
+        <br>
+        <div>
+          <label>Overall Rating (out of 10)</label>
+          <input class="form-control rating" v-model="prof_rating" type="number" min="0" max="10" name="Rating" required>
+        </div>
+        <br>
+        <button type="cancel" formnovalidate class="btn btn-default btn-cancel pull-left" formaction="./professors.html">Cancel</button>
+        <button type="submit" class="btn btn-default btn-submit pull-right" formaction="./professors.html">Submit</button>
+      </form> 
+    </div>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>

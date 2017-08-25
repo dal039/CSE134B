@@ -1,0 +1,12 @@
+.lead-small {
+	position: ;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.4;
+  z-index: 9999;
+}
+
+.lead {
+	z-index: 9999;
+}

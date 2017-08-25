@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> CSE 123 - CheckMyClass </title>	
+	<link rel="stylesheet" type="text/css" href="css/classpage.css">
+</head>
+<body>
+	<header>
+		<a href="class_finder.html">CheckMyClass</a>
+		<a href="login_signup.html" style="float:right">Log Out</a>
+	</header>
+
+	<section id="leftsidebar">
+		<ul style="list-style: none;">
+			<form>
+				<li><button formaction="overview.html">Overview</button></li>
+				<li><button formaction="professors.html">Professor</button></li>
+				<li><button formaction="ta.html">TAs</button></li>
+				<li><button formaction="feedback.html">Feedback</button></li>
+			</form>
+		</ul>
+	</section>
+
+	<main id="main">
+		<h1> CSE 123 </h1>
+		<h2>Feedback</h2>
+		<h3>Teddy Geisel &nbsp; Rating: 9.9 </h3>
+
+		<article id="description">
+			Best professor for the best class at the best university! I highly recommend CSE 123!
+		</article>
+
+		<br />
+
+		<textarea name="comment" form="comments" rows="4" cols="50">Comments about this class?</textarea>
+
+		<form action="/action_page.php" id="comments">
+  			Name: <input type="text" name="usrname">
+  			Rating: <input type="number" min="0" max="10" name="Rating">
+  			<input type="submit">
+		</form>
+		
+	</main>
+
+
+
+</body>
+</html>

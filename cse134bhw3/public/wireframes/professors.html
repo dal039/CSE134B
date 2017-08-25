@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> CSE 123 - CheckMyClass </title>	
+	<link rel="stylesheet" type="text/css" href="css/classpage.css">
+</head>
+<body>
+	<header>
+		<a href="class_finder.html">CheckMyClass</a>
+		<a href="login_signup.html" style="float:right">Log Out</a>
+	</header>
+
+	<section id="leftsidebar">
+		<ul style="list-style: none;">
+			<form>
+				<li><button formaction="overview.html">Overview</button></li>
+				<li><button formaction="professors.html">Professor</button></li>
+				<li><button formaction="ta.html">TAs</button></li>
+				<li><button formaction="feedback.html">Feedback</button></li>
+			</form>
+		</ul>
+	</section>
+
+	<main id ="main">
+		<h1> CSE 123 </h1>
+		<h2>Professor X</h2>
+		<h3>
+			Grading Difficulty: Fair &nbsp; Helpfulness: 8.2 &nbsp; Overall Rating: 9.1 
+		</h3>
+
+
+		<article id="description">
+			<h2>Description</h2>
+			Professor X is a teacher, writer, and entrepreneur.
+			<br>
+			He is the author of:
+			<br>
+			<ul>
+				<li>Web Design: The Complete Reference </li>
+				<li>HTML &amp; XHTML: The Complete Reference </li>
+				<li>Coauthor Javascript: The Complete Reference with Fritz Schneider.</li>
+				<li>Ajax: The Complete reference</li>
+			</ul>
+			In 1994 he founded PINT Incorporated (PINT) an internet services company, and Port80 Software in 2002.
+			<br>
+			In addition to the books he has published he is also a regular contributor to Network World Magazine and is a member of the Network World Test Alliance.
+			<br>
+			Professor X has an M.S. degree in Computer Science from UCSD where he is a Computer Science instructor.
+		</article>
+
+		<div class="rightsidebar">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Thomas_Powell_in_2008.jpg/220px-Thomas_Powell_in_2008.jpg" alt="man">
+			<section id="contactinfo">
+				<h3>Contact Info</h3> <br />
+				<b>Email:</b> professorx@ucsd.edu <br />
+				<b>Office Hours:</b> 24/7 CSE Basement <br />
+			</section>	
+			<br />
+			<form id="boxes">
+				<button style="float: left;" formaction="prof_rating.html">Rate</button>
+       			<button style="float: right;" formaction="prof_edit.html">Edit</button>
+    		</form>
+		</div>
+		
+	</main>
+
+</body>
+</html>
